@@ -1,0 +1,123 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto-Regular;
+    color: hsl(234, 29%, 20%);
+}
+
+
+html, body{
+    height: 100vh;
+}
+
+main{
+    margin: auto;
+    width: 85%; 
+    /*height: 500px;*/
+}
+
+section#content-main{
+    padding: 5px;
+}
+
+main > section#content-main > h1{
+    font-family: Roboto-Bold;
+    font-size: 2em;
+    margin: 10px 0 15px;
+}
+
+main > section#content-main > p{
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+main > section#content-main > ul{
+    position: relative;
+    list-style-type: none;
+}
+
+svg.icon{
+    margin-right: 15px;
+}
+
+main > section#content-main > ul > li{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+main > section#content-main > ul > li:nth-last-child(1){
+    margin-bottom: 45px;
+}
+
+main > section#content-main > ul > li > span.update{
+    position: absolute;
+    top: 0px;
+}
+
+form > label{
+    display: block;
+    font-family: Roboto-Bold;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+form > input[type=email]{
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 5px;
+}
+
+form > input[type=submit]{
+    width: 100%;
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(0, 0%, 100%);
+    padding: 15px 20px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: hsl(234, 29%, 20%);
+}
+
+/* Estilo do rodapé */
+
+footer{
+    background-image: linear-gradient(to right, #FE9045, #FF635B, #FF3E83);
+    color: hsl(234, 29%, 20%);
+    padding: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer > .attribution{
+    font-size: 11px; 
+    text-align: center;
+}
+
+footer > .attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+
+footer > .attribution a:hover {
+    text-decoration: underline;
+}
