@@ -1,1 +1,48 @@
 @charset 'UTF-8';
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto-Regular;
+    color: hsl(234, 29%, 20%);
+}
+
+main{
+    padding: 25px;
+    margin-top: 70px;
+}
+
+main > div#icon-success{
+    margin: 30px 0;
+}
+
+main > h1{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+main > p{
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+main > button[type=button]{
+    width: 100%;
+    margin-top: 150px;
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(0, 0%, 100%);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main > button[type=button]:hover{
+    background-color: hsl(234, 29%, 20%);
+}
