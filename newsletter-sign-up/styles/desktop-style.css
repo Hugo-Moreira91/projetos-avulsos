@@ -65,7 +65,7 @@ main > section#content-main > h1{
 main > section#content-main > p{
     font-size: 16px;
     line-height: 1.5em;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 main > section#content-main > ul{
@@ -83,7 +83,7 @@ main > section#content-main > ul > li{
 }
 
 main > section#content-main > ul > li:nth-last-child(1){
-    margin-bottom: 45px;
+    margin-bottom: 60px;
 }
 
 main > section#content-main > ul > li > span.update{
@@ -122,6 +122,8 @@ form > input[type=email]{
 }
 
 form > input[type=submit]{
+    font-family: Roboto-Bold;
+    font-size: 1.5em;
     width: 100%;
     background-color: hsl(234, 29%, 20%);
     color: hsl(0, 0%, 100%);
