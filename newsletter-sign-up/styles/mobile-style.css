@@ -97,7 +97,7 @@ form > input[type=email]{
 
 form > input[type=submit]{
     width: 100%;
-    background-color: hsl(235, 18%, 26%);
+    background-color: hsl(234, 29%, 20%);
     color: hsl(0, 0%, 100%);
     padding: 15px 20px;
     margin-bottom: 40px;
