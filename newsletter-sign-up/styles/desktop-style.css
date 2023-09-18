@@ -119,7 +119,7 @@ form > input[type=submit]{
 }
 
 form > input[type=submit]:hover{
-    background-color: hsl(234, 29%, 20%);
+    background-image: linear-gradient(to right, #FF3E83, #FF635B, #FE9045);
 }
 
 footer{
