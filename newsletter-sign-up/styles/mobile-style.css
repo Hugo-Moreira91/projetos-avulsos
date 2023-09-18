@@ -89,6 +89,12 @@ form > input[type=email]{
     cursor: pointer;
 }
 
+.email-error{
+    border: 1px solid hsl(4, 100%, 67%);
+    color: hsl(4, 100%, 67%);
+    background-color: rgb(255, 225, 225);
+}
+
 form > input[type=submit]{
     width: 100%;
     background-color: hsl(235, 18%, 26%);
@@ -101,7 +107,7 @@ form > input[type=submit]{
 }
 
 form > input[type=submit]:hover{
-    background-color: hsl(234, 29%, 20%);
+    background-image: linear-gradient(to right, #FF3E83, #FF635B, #FE9045);
 }
 
 /* Estilo do rodapé */

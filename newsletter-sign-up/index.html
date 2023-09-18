@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (width: 375px)"> 
-  <link rel="stylesheet" href="styles/desktop-style.css" media="screen and (width: 1440px)"> 
+  <link rel="stylesheet" href="styles/desktop-style.css" media="screen and (min-width: 1200px)"> 
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body>
@@ -20,8 +20,9 @@
         <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg><span class="update">Measuring to ensure updates are a success</span></li>
         <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg><span class="update">And much more!</span></li>
       </ul>
-      <form action="#" method="get" autocomplete="on">
+      <form id="my-form" action="#" method="get" autocomplete="on">
         <label for="iemail">Email address</label>
+        <span id="msg-error"></span>
         <input type="email" name="email" id="iemail" autocomplete="email" placeholder="email@company.com"  required>
         <input type="submit" value="Subscribe to monthly newsletter">
       </form>
@@ -34,6 +35,8 @@
       Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank" rel="external">Hugo Moreira</a>.
     </div>
   </footer>
+
+  <script src="functions/email-validation.js"></script>
 
 </body>
 </html>
