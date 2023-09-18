@@ -84,7 +84,7 @@ main > section#content-main > ul > li{
 }
 
 main > section#content-main > ul > li:nth-last-child(1){
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 main > section#content-main > ul > li > span.update{
