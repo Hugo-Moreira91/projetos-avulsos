@@ -81,6 +81,7 @@ form > input[type=email]{
     margin-bottom: 20px;
     border: 1px solid hsl(231, 7%, 60%);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 form > input[type=submit]{
