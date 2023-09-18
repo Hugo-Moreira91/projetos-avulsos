@@ -1,5 +1,23 @@
 @charset 'UTF-8';
 
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto-Regular;
+    color: hsl(234, 29%, 20%);
+}
+
 html, body{
     width: 100vw;
     height: 100vh;
@@ -11,8 +29,25 @@ body{
 }
 
 main{
+    background-color: hsl(0, 0%, 100%);
+    width: 65vw;
     position: absolute;
     top: 50%;
     left: 50%;
-    /*transform: translate(-50%);*/
+    transform: translate(-50%, -50%);
+}
+
+main > div#image{
+    background-image: url('../assets/images/illustration-sign-up-desktop.svg');
+    width: 400px;
+    height: 593px;
+    float: right;
+}
+
+section#content-main{
+    float: left;
+}
+
+footer{
+    display: none;
 }
