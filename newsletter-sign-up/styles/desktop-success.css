@@ -5,6 +5,11 @@
     src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,16 +18,36 @@
     color: hsl(234, 29%, 20%);
 }
 
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    position: relative;
+    background-color: hsl(234, 29%, 20%);
+}
+
 main{
-    padding: 25px;
-    margin-top: 70px;
+    background-color: hsl(0, 0%, 100%);
+    width: 40vw;
+    /*height: 65vh;*/
+    padding: 45px 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
 }
 
 main > div#icon-success{
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 
 main > h1{
+    font-family: Roboto-Bold;
+    font-size: 2.5em;
     width: 50%;
     margin-bottom: 20px;
 }
@@ -34,7 +59,7 @@ main > p{
 
 main > button[type=button]{
     width: 100%;
-    margin-top: 150px;
+    margin-top: 45px;
     background-color: hsl(235, 18%, 26%);
     color: hsl(0, 0%, 100%);
     padding: 15px 20px;
