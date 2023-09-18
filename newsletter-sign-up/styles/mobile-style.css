@@ -24,12 +24,12 @@ html, body{
 }
 
 main{
-    margin: auto;
-    width: 85%; 
-    /*height: 500px;*/
+    width: 100%;
 }
 
 section#content-main{
+    margin: auto;
+    width: 85%;
     padding: 5px;
 }
 
