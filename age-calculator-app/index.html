@@ -2,36 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (min-width: 375px)"> <!-- media="screen and (width: 375px)" -->
   <title>Frontend Mentor | Age calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  -->
 </head>
 <body>
 
-  Day
-  DD
+  <main>
+    <form action="#" method="get">
+      <div id="all-fields">
+        <div class="fields">
+          <label for="iday">D A Y</label>
+          <input type="text" name="day" id="iday" maxlength="2">
+        </div>
 
-  Month
-  MM
+        <div class="fields">
+          <label for="imonth">M O N T H</label>
+          <input type="text" name="month" id="imonth" maxlength="2">
+        </div>
+        
+        <div class="fields">
+          <label for="iyear">Y E A R</label>
+          <input type="text" name="year" id="iyear" maxlength="4">
+        </div>
+      </div>
 
-  Year
-  YYYY
+      <div id="submit-icon">
+        <hr>
+        <button type="submit"></button>
+      </div>
+    </form>
 
-  -- years
-  -- months
-  -- days
+    <div id="results">
+      <span id="year-result">--</span> <span class="ymd">years</span><br>
+      <span id="month-result">--</span> <span class="ymd">months</span><br>
+      <span id="day-result">--</span> <span class="ymd">days</span>
+    </div>
+
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="external">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank" rel="external">Hugo Moreira</a>.
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,161 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url('../assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins-ExtraBoldItalic;
+    src: url('../assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    /*width: 100vw;*/
+    height: 100vh;
+}
+
+body{
+    position: relative;
+    background-color: hsl(0, 0%, 86%);
+    width: 375px;
+    height: 667px;
+    /*border: 1px solid orange;*/
+}
+
+main{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    background-color: hsl(0, 0%, 100%);
+    width: 95%;
+    padding: 40px 0;
+    border-radius: 20px 20px 55px 20px;
+    transform: translate(-50%, -45%);
+}
+
+main > form > div#all-fields{
+    text-align: center;
+}
+
+main > form > div#all-fields > div.fields{
+    display: inline-block;
+    width: 31%;
+}
+
+main > form > div#all-fields > div.fields > label{
+    display: block;
+    float: left;
+    font-family: Poppins-Bold;
+    font-size: 14px;
+    margin-bottom: 2px;
+    padding-left: 5px;
+    color: hsl(0, 1%, 44%);
+}
+
+main > form > div#all-fields > div.fields > input[type=text]{
+    font-family: Poppins-Bold;
+    font-size: 32px;
+    width: 95%;
+    padding: 10px 15px;
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.4s;
+}
+
+main > form > div#all-fields > div.fields > input[type=text]:focus{
+    outline: none;
+    border-color: hsl(259, 100%, 65%);
+}
+
+main > form > div#all-fields > div.fields > input[type=text]::selection{
+    color: hsl(259, 100%, 65%);
+}
+
+main > form > div#submit-icon{
+    position: relative;
+    margin: 40px auto;
+    width: 90%;
+}
+
+main > form > div#submit-icon > hr{
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+main > form > div#submit-icon > button[type=submit]{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: hsl(259, 100%, 65%) url('../assets/images/icon-arrow.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+main > form > div#submit-icon > button[type=submit]:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+
+main > div#results{
+    margin: auto;
+    width: 90%;
+}
+
+main > div#results > span#year-result, span#month-result, span#day-result{
+    font-family: Poppins-ExtraBoldItalic;
+    font-size: 3em;
+    color: hsl(259, 100%, 65%);
+}
+
+main > div#results > span.ymd{
+    font-family: Poppins-ExtraBoldItalic;
+    font-size: 3em;
+    color: hsl(0, 0%, 8%);
+}
+
+/* Estilo do rodapé */
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 2.5%;
+    right: 2.5%;
+    width: 95%;
+    background-color: hsl(0, 0%, 94%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 55px;
+    padding: 2px;
+}
+
+footer > div.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+footer > div.attribution > a { 
+    color: hsl(228, 45%, 44%); 
+}
