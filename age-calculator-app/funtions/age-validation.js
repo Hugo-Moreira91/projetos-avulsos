@@ -72,9 +72,9 @@ document.querySelector('form').addEventListener('submit', function (e){
         birthMonths += 12;
     }
 
-    yearResult.innerHTML = birthYears;
-    monthResult.innerHTML = birthMonths;
-    dayResult.innerHTML = birthDays;
+    yearResult.innerHTML = '${birthYears}';
+    monthResult.innerHTML = '${birthMonths}';
+    dayResult.innerHTML = '${birthDays}';
 
 
 
