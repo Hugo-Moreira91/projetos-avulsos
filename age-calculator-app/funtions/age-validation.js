@@ -29,6 +29,8 @@ document.querySelector('form').addEventListener('submit', function (e){
         dayResult.innerHTML = '--';
         e.preventDefault();
         return;
+    }else{
+        msgDay.style.display = 'none';
     }
     if(month === ""){
         msgMonth.innerHTML = 'This field is required';
@@ -37,6 +39,8 @@ document.querySelector('form').addEventListener('submit', function (e){
         dayResult.innerHTML = '--';
         e.preventDefault();
         return;
+    }else{
+        msgMonth.style.display = 'none';
     }
     if(year === ""){
         msgYear.innerHTML = 'This field is required';
@@ -45,6 +49,8 @@ document.querySelector('form').addEventListener('submit', function (e){
         dayResult.innerHTML = '--';
         e.preventDefault();
         return;
+    }else{
+        msgYear.style.display = 'none';
     }
 
     if(isNaN(month) || month < 1 || month > 12){
@@ -54,6 +60,8 @@ document.querySelector('form').addEventListener('submit', function (e){
         dayResult.innerHTML = '--';
         e.preventDefault();
         return;
+    }else{
+        msgMonth.style.display = 'none';
     }
 
     if(isNaN(year) || year.toString().length !== 4){
@@ -70,6 +78,8 @@ document.querySelector('form').addEventListener('submit', function (e){
         dayResult.innerHTML = '--';
         e.preventDefault();
         return;
+    }else{
+        msgYear.style.display = 'none';
     }
 
     if(isNaN(day) || day < 1 || day > validDays[month - 1]){
@@ -79,6 +89,8 @@ document.querySelector('form').addEventListener('submit', function (e){
         dayResult.innerHTML = '--';
         e.preventDefault();
         return;
+    }else{
+        msgDay.style.display = 'none';
     }
 
     if(birthDays < 0){
@@ -91,9 +103,9 @@ document.querySelector('form').addEventListener('submit', function (e){
         birthMonths += 12;
     }
 
-    yearResult.innerHTML = '${birthYears}';
-    monthResult.innerHTML = '${birthMonths}';
-    dayResult.innerHTML = '${birthDays}';
+    yearResult.innerHTML = birthYears;
+    monthResult.innerHTML = birthMonths;
+    dayResult.innerHTML = birthDays;
 
     return;
 });
