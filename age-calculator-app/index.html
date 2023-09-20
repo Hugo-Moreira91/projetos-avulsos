@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (min-width: 375px)"> <!-- media="screen and (width: 375px)" -->
+  <link rel="stylesheet" href="styles/desktop-style.css" media="screen and (min-width: 1200px)"> <!-- media="screen and (width: 1440px)" -->
   <title>Frontend Mentor | Age calculator app</title>
 </head>
 <body>
@@ -13,19 +14,19 @@
       <div id="all-fields">
         <div class="fields">
           <label for="iday">D A Y</label>
-          <input type="text" name="day" id="iday" maxlength="2">
+          <input type="text" name="day" id="iday" maxlength="2" placeholder="DD">
           <span id="day-error"><!-- aqui entra a msg de erro para o dia / para toda a data --></span>          
         </div>
 
         <div class="fields">
           <label for="imonth">M O N T H</label>
-          <input type="text" name="month" id="imonth" maxlength="2">
+          <input type="text" name="month" id="imonth" maxlength="2" placeholder="MM">
           <span id="month-error"><!-- aqui entra a msg de erro para o mês --></span>
         </div>
         
         <div class="fields">
           <label for="iyear">Y E A R</label>
-          <input type="text" name="year" id="iyear" maxlength="4">
+          <input type="text" name="year" id="iyear" maxlength="4" placeholder="YYYY">
           <span id="year-error"><!-- aqui entra a msg de erro para o ano --></span>
         </div>
       </div>

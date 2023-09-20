@@ -1,0 +1,159 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins-Italic;
+    src: url('../assets/fonts/Poppins-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Poppins-ExtraBoldItalic;
+    src: url('../assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    /*width: 100vw;*/
+    height: 100vh;
+}
+
+body{
+    position: relative;
+    background-color: hsl(0, 0%, 86%);
+    width: 1440px;
+    height: 900px;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: hsl(0, 0%, 100%);
+    width: 54%;
+    padding: 40px 0;
+    border-radius: 20px 20px 150px 20px;
+    transform: translate(-50%, -50%);
+}
+
+main > form{
+    padding-left: 45px;
+}
+
+main > form > div#all-fields{
+    text-align: left;
+    width: 75%;
+}
+
+main > form > div#all-fields > div.fields{
+    display: inline-block;
+    width: 25%;
+    margin-right: 30px;
+}
+
+main > form > div#all-fields > div.fields > label{
+    display: block;
+    float: left;
+    font-family: Poppins-Bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+    color: hsl(0, 1%, 44%);
+}
+
+main > form > div#all-fields > div.fields > input[type=text]{
+    font-family: Poppins-Bold;
+    font-size: 32px;
+    width: 110%;
+    padding: 10px 25px;
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.4s;
+}
+
+main > form > div#all-fields > div.fields > span#day-error, span#month-error, span#year-error{
+    font-family: Poppins-Italic;
+    font-size: 12px;
+    margin-top: 8px;
+    padding-left: 2px;
+    display: inline-block;
+    width: 100%;
+    color: hsl(0, 100%, 67%);
+}
+
+main > form > div#all-fields > div.fields > input[type=text]:focus{
+    outline: none;
+    border-color: hsl(259, 100%, 65%);
+}
+
+main > form > div#all-fields > div.fields > input[type=text]::selection{
+    color: hsl(259, 100%, 65%);
+}
+
+main > form > div#submit-icon{
+    position: relative;
+    margin: 40px 0;
+    padding-right: 45px;
+    width: 100%;
+}
+
+main > form > div#submit-icon > hr{
+    width: 95%;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+main > form > div#submit-icon > button[type=submit]{
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    background: hsl(259, 100%, 65%) url('../assets/images/icon-arrow.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    border: none;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+main > form > div#submit-icon > button[type=submit]:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+
+main > div#results{
+    padding-left: 45px;
+    width: 100%;
+}
+
+main > div#results > span#year-result, span#month-result, span#day-result{
+    font-family: Poppins-ExtraBoldItalic;
+    font-size: 5.5em;
+    color: hsl(259, 100%, 65%);
+}
+
+main > div#results > span.ymd{
+    font-family: Poppins-ExtraBoldItalic;
+    font-size: 5.5em;
+    color: hsl(0, 0%, 8%);
+}
+
+footer{
+    display: none;
+}
