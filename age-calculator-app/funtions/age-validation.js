@@ -76,6 +76,8 @@ document.querySelector('form').addEventListener('submit', function (e){
     monthResult.innerHTML = '${birthMonths}';
     dayResult.innerHTML = '${birthDays}';
 
+    return;
+
 
 
 
