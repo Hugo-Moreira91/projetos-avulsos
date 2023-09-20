@@ -70,9 +70,10 @@ main > form > div#all-fields > div.fields > label{
 
 main > form > div#all-fields > div.fields > input[type=text]{
     font-family: Poppins-Bold;
-    font-size: 32px;
+    font-size: 24px;
     width: 95%;
     padding: 10px 15px;
+    margin-bottom: 2px;
     color: hsl(0, 0%, 8%);
     border: 1px solid hsl(0, 0%, 86%);
     border-radius: 10px;
