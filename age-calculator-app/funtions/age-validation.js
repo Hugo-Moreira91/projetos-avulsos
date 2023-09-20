@@ -28,6 +28,7 @@ document.querySelector('form').addEventListener('submit', function (e){
         monthResult.innerHTML = '--';
         dayResult.innerHTML = '--';
         e.preventDefault();
+        return;
     }
     if(month === ""){
         msgMonth.innerHTML = 'This field is required';
@@ -35,6 +36,7 @@ document.querySelector('form').addEventListener('submit', function (e){
         monthResult.innerHTML = '--';
         dayResult.innerHTML = '--';
         e.preventDefault();
+        return;
     }
     if(year === ""){
         msgYear.innerHTML = 'This field is required';
@@ -42,24 +44,41 @@ document.querySelector('form').addEventListener('submit', function (e){
         monthResult.innerHTML = '--';
         dayResult.innerHTML = '--';
         e.preventDefault();
+        return;
     }
 
     if(isNaN(month) || month < 1 || month > 12){
         msgMonth.innerHTML = 'Must be a valid month';
+        yearResult.innerHTML = '--';
+        monthResult.innerHTML = '--';
+        dayResult.innerHTML = '--';
         e.preventDefault();
+        return;
     }
 
     if(isNaN(year) || year.toString().length !== 4){
         msgYear.innerHTML = 'Must be a valid year';
+        yearResult.innerHTML = '--';
+        monthResult.innerHTML = '--';
+        dayResult.innerHTML = '--';
         e.preventDefault();
+        return;
     }else if(year > currentYear){
         msgYear.innerHTML = 'Must be in the past';
+        yearResult.innerHTML = '--';
+        monthResult.innerHTML = '--';
+        dayResult.innerHTML = '--';
         e.preventDefault();
+        return;
     }
 
     if(isNaN(day) || day < 1 || day > validDays[month - 1]){
         msgDay.innerHTML = 'Must be a valid day';
+        yearResult.innerHTML = '--';
+        monthResult.innerHTML = '--';
+        dayResult.innerHTML = '--';
         e.preventDefault();
+        return;
     }
 
     if(birthDays < 0){
@@ -77,53 +96,4 @@ document.querySelector('form').addEventListener('submit', function (e){
     dayResult.innerHTML = '${birthDays}';
 
     return;
-
-
-
-
-
-
-
-
-
-
-    /*
-    if(day === "" || month === "" || year === ""){
-        if(day === ""){
-            msgDay.innerHTML = 'This field is required';
-        }
-        if(month === ""){
-            msgMonth.innerHTML = 'This field is required';
-        }
-        if(year === ""){
-            msgYear.innerHTML = 'This field is required';
-        }
-        
-        e.preventDefault();
-        return;
-        
-    }else{
-        if(isNaN(month) || month < 1 || month > 12){
-            msgMonth.innerHTML = 'Must be a valid month';
-        }
-
-        if(isNaN(year) || year.toString().length !== 4){
-            msgYear.innerHTML = 'Must be a valid year';
-        }else if(year > currentYear){
-            msgYear.innerHTML = 'Must be in the past';
-        }
-
-        if(isNaN(day) || day < 1 || day > validDays[month - 1]){
-            msgDay.innerHTML = 'Must be a valid day';
-        }
-
-        e.preventDefault();
-        return;
-    }
-
-    if(birthDays < 0){
-
-    }
-    */
-
 });
