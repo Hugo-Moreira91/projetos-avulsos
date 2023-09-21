@@ -168,8 +168,6 @@ main > div#container > button[type="button"]:hover{
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-/* Estilo do rodapé */
-
 footer{
     position: absolute;
     bottom: 0;
