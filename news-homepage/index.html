@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (min-width: 375px)"> <!-- media="screen and (width: 375px)" -->
+  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (width: 375px)">
   <link rel="stylesheet" href="styles/desktop-style.css" media="screen and (width: 1440px)">
   <title>Frontend Mentor | News homepage</title>
 </head>
@@ -15,7 +15,7 @@
     <div id="menu" onclick="clickMenu()"><!-- Aqui entra o menu hambúrguer --></div>
     <div id="menu-itens">
       <menu id="itens">
-        <div id="menu-close"><!-- Aqui entra o 'x' para fechar menu --></div>
+        <div id="menu-close" onclick="closeMenu()"><!-- Aqui entra o 'x' para fechar menu --></div>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">New</a></li>
@@ -94,6 +94,8 @@
       Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank" rel="external">Hugo Moreira</a>.
     </div>
   </footer>
+
+  <script src="functions/menu-mobile.js"></script>
 
 </body>
 </html>
