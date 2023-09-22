@@ -41,20 +41,20 @@ header > div#menu{
     display: none;
 }
 
-header > ul{
+header > menu#itens > ul{
     display: inline;
     float: right;
     position: relative;
     top: 11.5px;
 }
 
-header > ul > li{
+header > menu#itens > ul > li{
     display: inline-block;
     margin-left: 40px;
     list-style-type: none;
 }
 
-header > ul > li > a{
+header > menu#itens > ul > li > a{
     font-size: 15px;
     font-weight: 400;
     color: hsl(236, 13%, 42%);
@@ -62,7 +62,7 @@ header > ul > li > a{
     transition: color 0.3s;
 }
 
-header > ul > li > a:hover{
+header > menu#itens > ul > li > a:hover{
     color: hsl(5, 85%, 63%);
 }
 

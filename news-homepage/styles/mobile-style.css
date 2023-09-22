@@ -48,7 +48,7 @@ header > div#menu{
 
 /* Trabalhar depois o menu */
 
-header > ul{
+header > menu#itens{
     display: none;
 }
 
