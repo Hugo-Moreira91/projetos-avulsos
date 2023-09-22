@@ -1,0 +1,130 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Fraunces;
+    src: url('../fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    width: 375px;
+    height: 667px;
+    padding: 25px 15px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main > div#img-product{
+    background: transparent url('../images/image-product-mobile.jpg') center center/contain no-repeat;
+    width: 100%;
+    height: 240px;
+}
+
+main > div#product{
+    margin: 25px;
+}
+
+main > div#product > h2{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: hsl(228, 12%, 48%);
+}
+
+main > div#product > h1{
+    font-family: Fraunces;
+    font-weight: 700;
+    line-height: 32px;
+    color: hsl(212, 21%, 14%);
+}
+
+main > div#product > p{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 25px 0;  /* Verificar depois */
+    line-height: 24px;
+    color: hsl(228, 12%, 48%);
+}
+
+main > div#product > div#prices{
+    margin-bottom: 20px;
+}
+
+main > div#product > div#prices > span#new-price{
+    display: inline-block;
+    width: 50%;
+    font-family: Fraunces;
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+main > div#product > div#prices > span#old-price{
+    display: inline-block;
+    position: relative;
+    top: calc(27px - 32px);
+    width: 48%;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+main > div#product > button[type="button"]{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    padding: 15px 0;
+    margin: auto;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main > div#product > button[type="button"]:hover{
+    background-color: hsl(156, 42%, 18%);
+}
+
+main > div#product > button[type="button"] > svg{
+    margin-right: 8px;
+}
+
+footer{
+    margin-top: 25px;
+    padding: 5px 0;
+    background-color: hsl(158, 36%, 37%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer > div.attribution{
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(0, 0%, 100%);
+}
+
+footer > div.attribution > a{
+    color: hsl(30, 38%, 92%);
+}
