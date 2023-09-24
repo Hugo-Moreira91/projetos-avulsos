@@ -4,26 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (min-width: 375px)"> <!-- media="screen and (width: 375px)"-->
   <title>Frontend Mentor | Interactive card details form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  -->
 </head>
 <body>
 
   <main>
     <section id="img-top">
-      <div id="front-card">
-        0000 0000 0000 0000
-        Jane Appleseed
-        00/00
-      </div>
       <div id="back-card">
-        000
+        <span id="cvc-number">000</span>
+      </div>
+      <div id="front-card">
+        <div id="content-card">
+          <div id="card-logo"></div>
+          <p><span class="space">0</span><span class="space">0</span><span class="space">0</span><span style="margin-right: 6px;">0</span> <span class="space">0</span><span class="space">0</span><span class="space">0</span><span style="margin-right: 6px;">0</span> <span class="space">0</span><span class="space">0</span><span class="space">0</span><span style="margin-right: 6px;">0</span> <span class="space">0</span><span class="space">0</span><span class="space">0</span><span style="margin-right: 6px;">0</span></p>
+          <span id="name-card"><span class="space">J</span><span class="space">A</span><span class="space">N</span><span class="space">E</span> <span class="space">A</span><span class="space">P</span><span class="space">P</span><span class="space">L</span><span class="space">E</span><span class="space">S</span><span class="space">E</span><span class="space">E</span>D</span>
+          <span id="date-exp"><span class="space">0</span><span class="space">0</span><span class="space">/</span><span class="space">0</span><span class="space">0</span></span>
+        </div>
       </div>
     </section>
     <section id="form-main">
@@ -31,14 +28,16 @@
         <label for="iname">CARDHOLDER NAME</label>
         <input type="text" name="name" id="iname" autocomplete="cc-name" placeholder="e.g. Jane Appleseed">
         <label for="inumber">CARD NUMBER</label>
-        <input type="text" name="number" id="inumber" autocomplete="cc-number" placeholder="e.g. 1234 5678 9123 0000">
+        <input type="text" name="number" id="inumber" autocomplete="cc-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
         <div id="exp-month-year">
           <label for="imonth">EXP. DATE (MM/YY)</label>
-          <input type="text" name="month" id="imonth" autocomplete="cc-exp-month" placeholder="MM">
-          <input type="text" name="year" id="iyear" autocomplete="cc-exp-year" placeholder="YY">
+          <input type="text" name="month" id="imonth" autocomplete="cc-exp-month" placeholder="MM" maxlength="2">
+          <input type="text" name="year" id="iyear" autocomplete="cc-exp-year" placeholder="YY" maxlength="2">
         </div>
-        <label for="icvc">CVC</label>
-        <input type="text" name="cvc" id="icvc" autocomplete="cc-csc" placeholder="e.g. 123">
+        <div id="enter-cvc">
+          <label for="icvc">CVC</label>
+          <input type="text" name="cvc" id="icvc" autocomplete="cc-csc" placeholder="e.g. 123">
+        </div>
         <input type="submit" value="Confirm">
       </form>
     </section>
@@ -52,8 +51,8 @@
   
   <footer>
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="external">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank" rel="external">Hugo Moreira</a>.
     </div>
   </footer>
 </body>
