@@ -24,11 +24,13 @@
       </div>
     </section>
     <section id="form-main">
-      <form action="#" method="post" autocomplete="on">
+      <form action="#" method="post" autocomplete="on" onsubmit="return validateForm()">
         <label for="iname">CARDHOLDER NAME</label>
         <input type="text" name="name" id="iname" autocomplete="cc-name" placeholder="e.g. Jane Appleseed">
+        <span class="input-error" id="name-error"></span>
         <label for="inumber">CARD NUMBER</label>
         <input type="text" name="number" id="inumber" autocomplete="cc-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
+        <span class="input-error" id="number-error"></span>
         <div id="exp-month-year">
           <label for="imonth">EXP. DATE (MM/YY)</label>
           <input type="text" name="month" id="imonth" autocomplete="cc-exp-month" placeholder="MM" maxlength="2">
@@ -36,7 +38,11 @@
         </div>
         <div id="enter-cvc">
           <label for="icvc">CVC</label>
-          <input type="text" name="cvc" id="icvc" autocomplete="cc-csc" placeholder="e.g. 123">
+          <input type="text" name="cvc" id="icvc" autocomplete="cc-csc" placeholder="e.g. 123" maxlength="3">
+        </div>
+        <div id="span-error">
+          <span class="input-error" id="exp-error"></span>
+          <span class="input-error" id="cvc-error"></span>
         </div>
         <input type="submit" value="Confirm">
       </form>
@@ -55,5 +61,7 @@
       Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank" rel="external">Hugo Moreira</a>.
     </div>
   </footer>
+
+  <script src="functions/validation.js"></script>
 </body>
 </html>

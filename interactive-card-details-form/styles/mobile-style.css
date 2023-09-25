@@ -24,12 +24,13 @@ body{
 
 main{
     width: 100%;
-    height: 100%;
+    height: 111vh;
+    margin-bottom: 20px;
 }
 
 main > section#img-top{
     background: transparent url('../images/bg-main-mobile.png') center center/cover no-repeat;
-    height: 36%;
+    height: 33%;
     padding: 0px 15px;
 }
 
@@ -55,7 +56,7 @@ main > section#img-top > div#back-card > span{
 main > section#img-top > div#front-card{
     display: inline;
     position: relative;
-    top: -50px;
+    top: -53px;
     background: transparent url('../images/bg-card-front.png') center center/contain no-repeat;
     float: left;
     padding: 20px;
@@ -102,11 +103,16 @@ main > section#img-top > div#front-card > div#content-card > span#date-exp{
 }
 
 main > section#form-main{
+    position: relative;
+    top: -20px;
     padding: 0 20px;
+    margin-bottom: 30px;
 }
 
 main > section#form-main > form label{
+    display: inline-block;
     font-size: 15px;
+    margin-top: 10px;
     color: hsl(278, 68%, 11%);
 }
 
@@ -115,7 +121,7 @@ main > section#form-main > form input[type="text"]{
     font-size: 18px;
     width: 100%;
     padding: 10px 15px;
-    margin: 8px 0 20px;
+    margin: 8px 0 5px;
     border: 1px solid hsl(270, 3%, 87%);
     border-radius: 8px;
     cursor: pointer;
@@ -150,11 +156,23 @@ main > section#form-main > form > div#enter-cvc{
     width: 50%;
 }
 
+main > section#form-main > form > div#span-error{
+    width: 100%;
+}
+
+main > section#form-main > form > div#span-error > span#exp-error{
+    width: 48%;
+}
+
+main > section#form-main > form > div#span-error > span#cvc-error{
+    width: 50%;
+}
+
 main > section#form-main > form > input[type="submit"]{
     font-size: 16px;
     width: 100%;
     padding: 10px 0;
-    margin: 5px 0;
+    margin-top: 20px;
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
     border: none;
@@ -162,9 +180,19 @@ main > section#form-main > form > input[type="submit"]{
     cursor: pointer;
 }
 
+/* Error states */
+
+span.input-error{
+    display: none;
+    font-size: 12px;
+    width: 100%;
+    color: hsl(0, 100%, 66%);
+}
+
+/****************/
+
 footer{
     padding: 5px 0;
-    margin-top: 50px;
     background-color: hsl(278, 68%, 11%);
 }
 
