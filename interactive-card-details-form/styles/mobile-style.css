@@ -84,13 +84,22 @@ main > section#img-top > div#front-card > div#content-card > p{
     color: hsl(0, 0%, 100%);
 }
 
+main > section#img-top > div#front-card > div#content-card > p span{
+    display: inline-block;
+    margin-right: 6px;
+    width: 20%;
+}
+
+/*
 span.space{
     margin-right: 2px;
 }
+*/
 
 main > section#img-top > div#front-card > div#content-card > span#name-card{
     font-size: 10px;
     font-weight: 400;
+    width: 80%;
     float: left;
     color: hsl(0, 0%, 100%);
 }
@@ -98,6 +107,7 @@ main > section#img-top > div#front-card > div#content-card > span#name-card{
 main > section#img-top > div#front-card > div#content-card > span#date-exp{
     font-size: 10px;
     font-weight: 400;
+    width: 15%;
     float: right;
     color: hsl(0, 0%, 100%);
 }
