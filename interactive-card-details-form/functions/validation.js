@@ -1,5 +1,18 @@
-function validateForm(){
+document.getElementById("displayCard").addEventListener("click", function(){
+    if(validateForm()){
+        showCard();
+        document.getElementById("form-main").style.display = "none";
+        document.getElementById("complete-state").style.display = "block";
+    }
+});
 
+document.getElementById("returnPage").addEventListener("click", function(){
+    document.getElementById("complete-state").style.display = "none";
+    document.getElementById("form-main").style.display = "block";
+    /* Poderíamos aqui acrescentar o retorno do layout inicial da página */
+})
+
+function validateForm(){
     var name = document.getElementById("iname").value;
     var number = document.getElementById("inumber").value;
     var exp_month = document.getElementById("imonth").value;
@@ -90,4 +103,22 @@ function validateForm(){
     }
 
     return true;
+}
+
+function showCard(){
+    var name = document.getElementById("iname").value;
+    var number = document.getElementById("inumber").value;
+    var exp_month = document.getElementById("imonth").value;
+    var exp_year = document.getElementById("iyear").value;
+    var cvc = document.getElementById("icvc").value;
+
+    document.getElementById('cvc-number').textContent = cvc;
+    document.getElementById('first-group').textContent = number.slice(0, 4);
+    document.getElementById('second-group').textContent = number.slice(4, 8);
+    document.getElementById('third-group').textContent = number.slice(8, 12);
+    document.getElementById('fourth-group').textContent = number.slice(12);
+
+    document.getElementById('name-card').textContent = name.toUpperCase();
+    document.getElementById('month-exp').textContent = exp_month;
+    document.getElementById('year-exp').textContent = exp_year;
 }

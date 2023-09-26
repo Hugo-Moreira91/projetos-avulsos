@@ -90,11 +90,11 @@ main > section#img-top > div#front-card > div#content-card > p span{
     width: 20%;
 }
 
-/*
+
 span.space{
     margin-right: 2px;
 }
-*/
+
 
 main > section#img-top > div#front-card > div#content-card > span#name-card{
     font-size: 10px;
@@ -113,6 +113,7 @@ main > section#img-top > div#front-card > div#content-card > span#date-exp{
 }
 
 main > section#form-main{
+    display: block;
     position: relative;
     top: -20px;
     padding: 0 20px;
@@ -178,10 +179,10 @@ main > section#form-main > form > div#span-error > span#cvc-error{
     width: 50%;
 }
 
-main > section#form-main > form > input[type="submit"]{
+main > section#form-main > form > button[type="button"]{
     font-size: 16px;
     width: 100%;
-    padding: 10px 0;
+    padding: 15px 0;
     margin-top: 20px;
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
@@ -200,6 +201,47 @@ span.input-error{
 }
 
 /****************/
+
+main > section#complete-state{
+    display: none;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-top: 85px;
+}
+
+main > section#complete-state > div#img-complete{
+    background: transparent url('../images/icon-complete.svg') center center/cover no-repeat;
+    width: 80px;
+    height: 80px;
+    margin: 30px auto;
+}
+
+main > section#complete-state > h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: hsl(278, 68%, 11%);
+}
+
+main > section#complete-state > p{
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: hsl(279, 6%, 55%);
+}
+
+main > section#complete-state > button[type="button"]{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 20px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Rodapé retirado */
 
 footer{
     padding: 5px 0;
