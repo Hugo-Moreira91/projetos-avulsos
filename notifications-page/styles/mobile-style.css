@@ -26,3 +26,18 @@
     font-family: Jakarta;
     font-weight: 500;
 }
+
+body{
+    width: 375px;
+    height: 667px;
+    border: 1px solid blue;
+}
+
+main{
+    width: 95%;
+    margin: auto;
+}
+
+main > section#top-notification{
+    margin: 20px 0;
+}
