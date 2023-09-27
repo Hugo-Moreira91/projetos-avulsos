@@ -1,0 +1,88 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url('../fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SpaceGrotesk;
+    font-weight: 500;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    height: 900px;
+    width: 1440px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid red;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+main > section#img-top{
+    background: transparent url('../images/bg-main-desktop.png') center center/cover no-repeat;
+    height: 100%;
+    width: 33%;
+    padding: 0;
+}
+
+main > section#img-top > div#back-card{
+    display: inline;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background: transparent url('../images/bg-card-back.png') center center/contain no-repeat;
+    float: right;
+    width: 100%;
+    height: 29%;
+}
+
+main > section#img-top > div#back-card > span{
+    position: absolute;
+    top: 49%;
+    left: 87%;
+    font-size: 14px;
+    color: hsl(270, 3%, 87%);
+    transform: translate(-87%, -49%);
+}
+
+main > section#img-top > div#front-card{
+    display: inline;
+    position: relative;
+    top: -12%;
+    left: 30%;
+    background: transparent url('../images/bg-card-front.png') center center/contain no-repeat;
+    float: left;
+    padding: 30px;
+    width: 100%;
+    height: 29%;
+}
+
+main > section#img-top > div#front-card > div#content-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+main > section#img-top > div#front-card > div#content-card > div#card-logo{
+    background: transparent url('../images/card-logo.svg') center center/contain no-repeat;
+    width: 22%;
+    height: 25%;
+}
+
+/* Rodapé retirado */
+
+footer{
+    display: none;
+}

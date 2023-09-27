@@ -241,8 +241,6 @@ main > section#complete-state > button[type="button"]{
     cursor: pointer;
 }
 
-/* Rodapé retirado */
-
 footer{
     padding: 5px 0;
     background-color: hsl(278, 68%, 11%);
