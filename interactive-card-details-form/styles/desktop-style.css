@@ -21,16 +21,16 @@ body{
     height: 900px;
     width: 1440px;
     background-color: hsl(0, 0%, 100%);
-    border: 1px solid red;
 }
 
 main{
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 main > section#img-top{
+    display: inline-block;
     background: transparent url('../images/bg-main-desktop.png') center center/cover no-repeat;
     height: 100%;
     width: 33%;
@@ -81,8 +81,203 @@ main > section#img-top > div#front-card > div#content-card > div#card-logo{
     height: 25%;
 }
 
-/* Rodapé retirado */
+main > section#img-top > div#front-card > div#content-card > p{
+    font-size: 28px;
+    width: 100%;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 100%);
+}
+
+main > section#img-top > div#front-card > div#content-card > p > span#first-group{
+    display: inline-block;
+    margin-right: 12px;
+    width: 22%;
+}
+
+main > section#img-top > div#front-card > div#content-card > p > span#second-group{
+    display: inline-block;
+    margin-right: 12px;
+    width: 22%;
+}
+
+main > section#img-top > div#front-card > div#content-card > p > span#third-group{
+    display: inline-block;
+    margin-right: 12px;
+    width: 22%;
+}
+
+main > section#img-top > div#front-card > div#content-card > p > span#fourth-group{
+    display: inline-block;
+    margin-right: 12px;
+    width: 22%;
+}
+
+span.space{
+    margin-right: 0;
+}
+
+main > section#img-top > div#front-card > div#content-card > span#name-card{
+    font-size: 14px;
+    font-weight: 400;
+    width: 80%;
+    float: left;
+    color: hsl(0, 0%, 100%);
+}
+
+main > section#img-top > div#front-card > div#content-card > span#date-exp{
+    font-size: 14px;
+    font-weight: 400;
+    width: 15%;
+    float: right;
+    color: hsl(0, 0%, 100%);
+}
+
+main > section#form-main{
+    display: inline-block;
+    position: relative;
+    top: -34%;
+    left: 22%;
+    width: 33%;
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+
+main > section#form-main > form label{
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 10px;
+    color: hsl(278, 68%, 11%);
+}
+
+main > section#form-main > form input[type="text"]{
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0 15px;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+}
+
+main > section#form-main > form input[type="text"]:focus{
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    border-radius: 8px;
+    border-image-slice: 1;
+}
+
+main > section#form-main > form input[type="text"]::placeholder{
+    color: hsl(279, 6%, 55%);
+}
+
+main > section#form-main > form > div#exp-month-year{
+    display: inline-block;
+    margin-right: 2px;
+    width: 48%;
+}
+
+main > section#form-main > form > div#exp-month-year > input[type="text"]{
+    display: inline-block;
+    margin-right: 2px;
+    width: 45%;
+}
+
+main > section#form-main > form > div#enter-cvc{
+    display: inline-block;
+    width: 50%;
+}
+
+main > section#form-main > form > div#span-error{
+    width: 100%;
+}
+
+main > section#form-main > form > div#span-error > span#exp-error{
+    width: 48%;
+}
+
+main > section#form-main > form > div#span-error > span#cvc-error{
+    width: 50%;
+}
+
+main > section#form-main > form > button[type="button"]{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 20px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Error states */
+
+span.input-error{
+    display: none;
+    font-size: 12px;
+    width: 100%;
+    color: hsl(0, 100%, 66%);
+}
+
+/****************/
+
+main > section#complete-state{
+    position: relative;
+    top: -38%;
+    left: 22%;
+    display: none;
+    width: 33%;
+    padding: 0 15px;
+    text-align: center;
+    margin-top: 85px;
+}
+
+main > section#complete-state > div#img-complete{
+    background: transparent url('../images/icon-complete.svg') center center/cover no-repeat;
+    width: 80px;
+    height: 80px;
+    margin: 30px auto;
+}
+
+main > section#complete-state > h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: hsl(278, 68%, 11%);
+}
+
+main > section#complete-state > p{
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: hsl(279, 6%, 55%);
+}
+
+main > section#complete-state > button[type="button"]{
+    font-size: 16px;
+    width: 90%;
+    padding: 15px 0;
+    margin-top: 20px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
 footer{
-    display: none;
+    padding: 5px 0;
+    background-color: hsl(278, 68%, 11%);
+}
+
+footer > div.attribution{
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+footer > div.attribution > a{
+    color: hsl(228, 45%, 44%);
 }

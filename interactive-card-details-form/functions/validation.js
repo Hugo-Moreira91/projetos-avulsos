@@ -2,13 +2,13 @@ document.getElementById("displayCard").addEventListener("click", function(){
     if(validateForm()){
         showCard();
         document.getElementById("form-main").style.display = "none";
-        document.getElementById("complete-state").style.display = "block";
+        document.getElementById("complete-state").style.display = "inline-block";
     }
 });
 
 document.getElementById("returnPage").addEventListener("click", function(){
     document.getElementById("complete-state").style.display = "none";
-    document.getElementById("form-main").style.display = "block";
+    document.getElementById("form-main").style.display = "inline-block";
     /* Poderíamos aqui acrescentar o retorno do layout inicial da página */
 })
 
