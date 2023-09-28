@@ -36,8 +36,183 @@ body{
 main{
     width: 95%;
     margin: auto;
+    background-color: var(--neutral1);
 }
 
 main > section#top-notification{
     margin: 20px 0;
+}
+
+main > section#top-notification > h1{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 800;
+    width: 56%;
+    color: var(--neutral7);
+}
+
+main > section#top-notification > h1 > span#number-notification{
+    font-size: 20px;
+    font-weight: 800;
+    background-color: var(--primary2);
+    color: var(--neutral1);
+    padding: 1px 12px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+main > section#top-notification > span#clean-notification{
+    position: relative;
+    top: 4px;
+    font-size: 16px;
+    float: right;
+    color: var(--neutral5);
+    cursor: pointer;
+    transition: color .3s;
+}
+
+main > section#top-notification > span#clean-notification:hover{
+    color: var(--primary2);
+}
+
+/* A princípio não há nenhuma estilização para a seção inteira - talvez um margim-bottom para espaçar o footer
+main > section#main-notification{
+
+}
+*/
+
+main > section#main-notification > div.box-msg{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: var(--neutral2);
+}
+
+
+main > section#main-notification > div#mark-msg div#img-mark{
+    background: transparent url('../assets/images/avatar-mark-webber.webp') center center/contain no-repeat;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+main > section#main-notification div.img-person{
+    display: inline-block;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+main > section#main-notification div.content-box{
+    display: inline-block;
+    font-size: 16px;
+    width: 80%;
+    margin-left: 8px;
+    color: var(--neutral6);
+}
+
+main > section#main-notification div.content-box span.name{
+    font-weight: 800;
+    color: var(--neutral7);
+    cursor: pointer;
+    transition: color .3s;
+}
+
+main > section#main-notification div.content-box span.name:hover{
+    color: var(--primary2);
+}
+
+main > section#main-notification div.content-box span.post{
+    font-weight: 800;
+    color: var(--neutral6);
+    cursor: pointer;
+    transition: color .3s;
+}
+
+main > section#main-notification div.content-box span.post:hover{
+    color: var(--primary2);
+}
+
+main > section#main-notification div.content-box > p span.red-dot{
+    position: relative;
+    top: -1px;
+    left: 5px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary1);
+    border-radius: 50%;
+}
+
+main > section#main-notification div.content-box span.time-notification{
+    display: inline-block;
+    color: var(--neutral5);
+    margin-top: 3px;
+}
+
+main > section#main-notification > div#angela-msg div#img-angela{
+    background: transparent url('../assets/images/avatar-angela-gray.webp') center center/contain no-repeat;
+}
+
+main > section#main-notification > div#jacob-msg div#img-jacob{
+    background: transparent url('../assets/images/avatar-jacob-thompson.webp') center center/contain no-repeat;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+main > section#main-notification > div#rizky-msg div#img-rizky{
+    background: transparent url('../assets/images/avatar-rizky-hasanuddin.webp') center center/contain no-repeat;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+main > section#main-notification > div#kimberly-msg div#img-kimberly{
+    background: transparent url('../assets/images/avatar-kimberly-smith.webp') center center/contain no-repeat;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+main > section#main-notification > div#kimberly-msg > div.content-box{
+    width: 65%;
+}
+
+main > section#main-notification > div#kimberly-msg > div#img-chess{
+    background: transparent url('../assets/images/image-chess.webp') center center/contain no-repeat;
+    display: inline;
+    float: right;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: box-shadow .3s, border-radius .3s;
+}
+
+main > section#main-notification > div#kimberly-msg > div#img-chess:hover{
+    box-shadow: 0px 0px 5px var(--neutral5);
+    border-radius: 5px;
+}
+
+main > section#main-notification > div#nathan-msg div#img-nathan{
+    background: transparent url('../assets/images/avatar-nathan-peterson.webp') center center/contain no-repeat;
+    position: relative;
+    top: 105%;
+    left: 0;
+    transform: translate(0, -105%);
+}
+
+main > section#main-notification > div#anna-msg div#img-anna{
+    background: transparent url('../assets/images/avatar-anna-kim.webp') center center/contain no-repeat;
+}
+
+main > section#main-notification span.name-group{
+    font-weight: 800;
+    color: var(--primary2);
+    cursor: pointer;
 }
