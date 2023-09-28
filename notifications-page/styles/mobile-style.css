@@ -30,7 +30,6 @@
 body{
     width: 375px;
     height: 667px;
-    border: 1px solid blue;
 }
 
 main{
@@ -75,18 +74,18 @@ main > section#top-notification > span#clean-notification:hover{
     color: var(--primary2);
 }
 
-/* A princípio não há nenhuma estilização para a seção inteira - talvez um margim-bottom para espaçar o footer
 main > section#main-notification{
-
+    margin-bottom: 40px;
 }
-*/
+
 
 main > section#main-notification > div.box-msg{
+    display: inline-block;
     width: 100%;
     margin-bottom: 10px;
     padding: 10px 0;
     border-radius: 5px;
-    background-color: var(--neutral2);
+    transition: background-color .3s;
 }
 
 
@@ -172,6 +171,34 @@ main > section#main-notification > div#rizky-msg div#img-rizky{
     transform: translate(0, -50%);
 }
 
+main > section#main-notification > div#rizky-msg{
+    margin-bottom: 0;
+}
+
+main > section#main-notification > div#private-msg{
+    display: block;
+    width: 83%;
+    float: right;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    border: 1px solid var(--neutral4);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .3s, border .3s;
+}
+
+main > section#main-notification > div#private-msg:hover{
+    background-color: var(--neutral3);
+    border: 1px solid var(--neutral3);
+}
+
+main > section#main-notification > div#private-msg > p{
+    font-size: 16px;
+    width: 85%;
+    margin-left: 15px;
+    color: var(--neutral6);
+}
+
 main > section#main-notification > div#kimberly-msg div#img-kimberly{
     background: transparent url('../assets/images/avatar-kimberly-smith.webp') center center/contain no-repeat;
     position: relative;
@@ -215,4 +242,19 @@ main > section#main-notification span.name-group{
     font-weight: 800;
     color: var(--primary2);
     cursor: pointer;
+}
+
+footer{
+    padding: 5px 0;
+    background-color: var(--primary2);
+    color: var(--neutral1);
+}
+
+footer > div.attribution{
+    font-size: 11px; 
+    text-align: center;
+}
+
+footer > div.attribution > a{
+    color: var(--neutral5);
 }
