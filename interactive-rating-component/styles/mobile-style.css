@@ -1,0 +1,148 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: Overpass;
+    src: url('../fonts/Overpass-VariableFont_wght.ttf') format('truetype');
+}
+
+:root{
+    /* Primary color */
+    --primary: hsl(25, 97%, 53%);
+    /* Neutral colors */
+    --neutral1: hsl(0, 0%, 100%);
+    --neutral2: hsl(217, 12%, 63%);
+    --neutral3: hsl(216, 12%, 54%);
+    --neutral4: hsl(213, 19%, 18%);
+    --neutral5: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Overpass;
+    font-weight: 400;
+}
+
+html{
+    background-color: var(--neutral1);
+}
+
+body{
+    position: absolute;
+    width: 375px;
+    height: 100vh;
+    background-color: var(--neutral5);
+    border: 1px solid green;
+}
+
+main{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    padding: 25px 20px;
+    background-color: var(--neutral4);
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+}
+
+main > div#rating{
+    width: 100%;
+}
+
+span.circle{
+    display: inline-block;
+    text-align: center;
+    width: 45px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--neutral3);
+    background-color: hsla(216, 12%, 54%, 0.1);
+}
+/*
+main > div#rating > div#star-icon{
+    margin-bottom: 15px;
+}
+*/
+main > div#rating > div#star-icon > span > img{
+    position: relative;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+main > div#rating > h1{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0 15px;
+    color: var(--neutral1);
+}
+
+main > div#rating > p{
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    color: var(--neutral3);
+}
+
+main > div#rating > div#rating-scale{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+main > div#rating > div#rating-scale span{
+    line-height: 45px;
+    font-size: 15px;
+    margin-right: 13px;
+    cursor: pointer;
+    transition: background-color .2s, color .2s;
+}
+
+main > div#rating > div#rating-scale span:nth-last-child(1){
+    margin-right: 0;
+}
+
+main > div#rating > div#rating-scale span:hover{
+    color: var(--neutral1);
+    background-color: var(--primary);
+}
+
+main > div#rating > button[type="submit"]{
+    font-size: 13px;
+    font-weight: 700;
+    width: 100%;
+    padding: 13px 0 10px;
+    background-color: var(--primary);
+    color: var(--neutral1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color .2s, color .2s;
+}
+
+main > div#rating > button[type="submit"]:hover{
+    background-color: var(--neutral1);
+    color: var(--primary);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 0;
+    background-color: hsla(216, 12%, 54%, 0.1);
+}
+
+footer > div.attribution{
+    font-size: 11px; 
+    text-align: center;
+    color: var(--neutral1);
+}
+
+footer > div.attribution > a{
+    color: var(--primary);
+}
+

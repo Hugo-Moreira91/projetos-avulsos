@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (min-width: 375px)"> <!-- media="screen and (width: 375px)" -->
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <main>
+    <!-- Rating state start -->
+
+    <div id="rating">
+      <div id="star-icon">
+        <span class="circle"><img src="images/icon-star.svg" alt="Icon of a star"></span>
+      </div>
+      <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+      <div id="rating-scale">
+        <span id="rating1" class="circle">1</span> 
+        <span id="rating2" class="circle">2</span> 
+        <span id="rating3" class="circle">3</span> 
+        <span id="rating4" class="circle">4</span> 
+        <span id="rating5" class="circle">5</span>
+      </div>
+      <button id="submission" type="submit">S U B M I T</button>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <!--
+    You selected [ADD RATING HERE] out of 5
+    Thank you!
+    We appreciate you taking the time to give a rating. If you ever need more support,
+    don’t hesitate to get in touch!
+    -->
+    <!-- Thank you state end -->
+  </main>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="external">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank" rel="external">Hugo Moreira</a>.
+    </div>
+  </footer>
+
+  <script src="functions/submit-rating.js"></script>
+</body>
+</html>
