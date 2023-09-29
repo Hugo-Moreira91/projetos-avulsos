@@ -12,7 +12,7 @@
   <main>
     <!-- Rating state start -->
 
-    <div id="rating">
+    <div id="rating" style="display: block;">
       <div id="star-icon">
         <span class="circle"><img src="images/icon-star.svg" alt="Icon of a star"></span>
       </div>
@@ -34,12 +34,15 @@
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <!--
-    You selected [ADD RATING HERE] out of 5
-    Thank you!
-    We appreciate you taking the time to give a rating. If you ever need more support,
-    don’t hesitate to get in touch!
-    -->
+    <div id="submission-complete" style="display: none;">
+      <img src="images/illustration-thank-you.svg" alt="Cellphone illustration">
+      <div id="result-msg">You selected <span id="choose-rating"></span> out of 5</div>
+      <h1>Thank you!</h1>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don't hesitate to get in touch!
+      </p>
+    </div>
     <!-- Thank you state end -->
   </main>
   
