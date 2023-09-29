@@ -28,18 +28,28 @@
 }
 
 body{
-    width: 375px;
-    height: 667px;
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    background-color: var(--neutral2);
 }
 
 main{
-    width: 95%;
-    margin: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    margin: 0;
+    padding: 30px 0px;
     background-color: var(--neutral1);
+    box-shadow: 0px 0px 15px var(--neutral3);
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
 }
 
 main > section#top-notification{
-    margin: 20px 0;
+    width: 93%;
+    margin: auto;
 }
 
 main > section#top-notification > h1{
@@ -77,9 +87,10 @@ main > section#top-notification > span#clean-notification:hover{
 }
 
 main > section#main-notification{
-    margin-bottom: 40px;
+    width: 93%;
+    margin: 30px auto;
+    margin-bottom: 0px;
 }
-
 
 main > section#main-notification > div.box-msg{
     display: inline-block;
@@ -90,18 +101,17 @@ main > section#main-notification > div.box-msg{
     transition: background-color .3s;
 }
 
-
 main > section#main-notification > div#mark-msg div#img-mark{
     background: transparent url('../assets/images/avatar-mark-webber.webp') center center/contain no-repeat;
     position: relative;
-    top: 50%;
+    top: 3px;
     left: 0;
-    transform: translate(0, -50%);
+    transform: translate(0, 0);
 }
 
 main > section#main-notification div.img-person{
     display: inline-block;
-    margin-left: 10px;
+    margin: 0 15px;
     width: 40px;
     height: 40px;
 }
@@ -109,8 +119,8 @@ main > section#main-notification div.img-person{
 main > section#main-notification div.content-box{
     display: inline-block;
     font-size: 16px;
-    width: 80%;
-    margin-left: 8px;
+    width: 85%;
+    margin-left: 0;
     color: var(--neutral6);
 }
 
@@ -155,22 +165,24 @@ main > section#main-notification div.content-box span.time-notification{
 
 main > section#main-notification > div#angela-msg div#img-angela{
     background: transparent url('../assets/images/avatar-angela-gray.webp') center center/contain no-repeat;
+    position: relative;
+    top: 3px;
 }
 
 main > section#main-notification > div#jacob-msg div#img-jacob{
     background: transparent url('../assets/images/avatar-jacob-thompson.webp') center center/contain no-repeat;
     position: relative;
-    top: 50%;
+    top: 3px;
     left: 0;
-    transform: translate(0, -50%);
+    transform: translate(0, 0);
 }
 
 main > section#main-notification > div#rizky-msg div#img-rizky{
     background: transparent url('../assets/images/avatar-rizky-hasanuddin.webp') center center/contain no-repeat;
     position: relative;
-    top: 50%;
+    top: 3px;
     left: 0;
-    transform: translate(0, -50%);
+    transform: translate(0, 0);
 }
 
 main > section#main-notification > div#rizky-msg{
@@ -182,6 +194,7 @@ main > section#main-notification > div#private-msg{
     width: 83%;
     float: right;
     padding: 15px 0;
+    margin-right: 40px;
     margin-bottom: 30px;
     border: 1px solid var(--neutral4);
     border-radius: 5px;
@@ -196,7 +209,7 @@ main > section#main-notification > div#private-msg:hover{
 
 main > section#main-notification > div#private-msg > p{
     font-size: 16px;
-    width: 85%;
+    width: 95%;
     margin-left: 15px;
     color: var(--neutral6);
 }
@@ -204,9 +217,9 @@ main > section#main-notification > div#private-msg > p{
 main > section#main-notification > div#kimberly-msg div#img-kimberly{
     background: transparent url('../assets/images/avatar-kimberly-smith.webp') center center/contain no-repeat;
     position: relative;
-    top: 50%;
+    top: 3px;
     left: 0;
-    transform: translate(0, -50%);
+    transform: translate(0, 0);
 }
 
 main > section#main-notification > div#kimberly-msg > div.content-box{
@@ -219,6 +232,7 @@ main > section#main-notification > div#kimberly-msg > div#img-chess{
     float: right;
     width: 40px;
     height: 40px;
+    margin-right: 40px;
     cursor: pointer;
     transition: box-shadow .3s, border-radius .3s;
 }
@@ -231,13 +245,15 @@ main > section#main-notification > div#kimberly-msg > div#img-chess:hover{
 main > section#main-notification > div#nathan-msg div#img-nathan{
     background: transparent url('../assets/images/avatar-nathan-peterson.webp') center center/contain no-repeat;
     position: relative;
-    top: 105%;
+    top: 50%;
     left: 0;
-    transform: translate(0, -105%);
+    transform: translate(0, -50%);
 }
 
 main > section#main-notification > div#anna-msg div#img-anna{
     background: transparent url('../assets/images/avatar-anna-kim.webp') center center/contain no-repeat;
+    position: relative;
+    top: 3px;
 }
 
 main > section#main-notification span.name-group{
@@ -246,7 +262,13 @@ main > section#main-notification span.name-group{
     cursor: pointer;
 }
 
+/* Rodapé retirado momentaneamente */
+
 footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding: 5px 0;
     background-color: var(--primary2);
     color: var(--neutral1);
