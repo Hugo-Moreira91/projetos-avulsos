@@ -26,8 +26,8 @@
 
 body{
     position: absolute;
-    width: 375px;
-    height: 100vh;
+    width: 1440px;
+    height: 900px;
     background-color: var(--neutral5);
 }
 
@@ -35,10 +35,10 @@ main{
     position: relative;
     top: 50%;
     left: 50%;
-    width: 90%;
-    padding: 25px 20px;
+    width: 27%;
+    padding: 25px;
     background-color: var(--neutral4);
-    border-radius: 15px;
+    border-radius: 25px;
     transform: translate(-50%, -50%);
 }
 
@@ -96,7 +96,7 @@ main > div#rating > div#rating-scale{
 main > div#rating > div#rating-scale span{
     line-height: 45px;
     font-size: 15px;
-    margin-right: 13px;
+    margin-right: 24px;
     cursor: pointer;
     transition: background-color .2s, color .2s;
 }
@@ -147,12 +147,12 @@ main > div#submission-complete{
 }
 
 main > div#submission-complete > img{
-    margin: 10px 0 20px;
+    margin: 10px 0 25px;
 }
 
 main > div#submission-complete > div#result-msg{
     font-size: 15px;
-    width: 60%;
+    width: 55%;
     margin: auto;
     padding: 8px 0 5px;
     border-radius: 50px;
@@ -161,9 +161,9 @@ main > div#submission-complete > div#result-msg{
 }
 
 main > div#submission-complete > h1{
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
-    margin: 25px 0 10px;
+    margin: 35px 0 15px;
     color: var(--neutral1);
 }
 
@@ -171,7 +171,7 @@ main > div#submission-complete > p{
     font-size: 15px;
     width: 100%;
     margin: 0 auto 20px;
-    line-height: 1.3;
+    line-height: 1.6;
     color: var(--neutral3);
 }
 
@@ -195,4 +195,3 @@ footer > div.attribution{
 footer > div.attribution > a{
     color: var(--primary);
 }
-

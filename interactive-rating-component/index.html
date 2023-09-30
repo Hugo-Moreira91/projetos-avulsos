@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (min-width: 375px)"> <!-- media="screen and (width: 375px)" -->
+  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (width: 375px)">
+  <link rel="stylesheet" href="styles/desktop-style.css" media="screen and (width: 1440px)"> 
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
@@ -37,7 +38,7 @@
     <!-- Thank you state start -->
     <div id="submission-complete" style="display: none;">
       <img src="images/illustration-thank-you.svg" alt="Cellphone illustration">
-      <div id="result-msg">You selected <span id="choose-rating"></span> out of 5</div>
+      <div id="result-msg">You selected <span id="choose-rating">4</span> out of 5</div>
       <h1>Thank you!</h1>
       <p>
         We appreciate you taking the time to give a rating. If you ever need more support,
