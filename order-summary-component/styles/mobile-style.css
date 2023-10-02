@@ -1,0 +1,99 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: RedHat;
+    src: url('../fonts/RedHatDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+:root{
+    /* Primary colors */
+    --primary1: hsl(225, 100%, 94%);
+    --primary2: hsl(245, 75%, 52%);
+    /* Neutral colors */
+    --neutral1: hsl(225, 100%, 98%);
+    --neutral2: hsl(224, 23%, 55%);
+    --neutral3: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: RedHat;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    background-color: var(--neutral1);
+}
+
+body{
+    position: absolute;
+    width: 375px;
+    height: 100vh;
+    background: var(--primary1) url('../images/pattern-background-mobile.svg') no-repeat;
+    border: 1px solid orangered;
+}
+
+main{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 80vh;
+    background-color: var(--neutral1);
+    border-radius: 20px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+main > div#music-img{
+    background: var(--primary2) url('../images/illustration-hero.svg') center center/cover no-repeat;
+    width: 100%;
+    height: 164px;
+}
+
+main > div#container{
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    border: 1px solid green;
+}
+
+main > div#container > h1{
+    font-size: 24px;
+    font-weight: 900;
+    margin: 30px 0 20px;
+    color: var(--neutral3);
+}
+
+main > div#container > p{
+    font-size: 16px;
+    color: var(--neutral2);
+}
+
+/* Footer style */
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    padding: 5px 0;
+    background-color: var(--neutral1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+footer > div.attribution{
+    font-size: 11px; 
+    color: var(--neutral3);
+    text-align: center;
+}
+
+footer > div.attribution > a{
+    color: var(--primary2);
+}
+
+
