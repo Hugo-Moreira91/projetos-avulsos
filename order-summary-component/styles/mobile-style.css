@@ -33,7 +33,6 @@ body{
     width: 375px;
     height: 100vh;
     background: var(--primary1) url('../images/pattern-background-mobile.svg') no-repeat;
-    border: 1px solid orangered;
 }
 
 main{
@@ -41,7 +40,7 @@ main{
     top: 50%;
     left: 50%;
     width: 90%;
-    height: 80vh;
+    height: 85vh;
     background-color: var(--neutral1);
     border-radius: 20px;
     overflow: hidden;
@@ -57,14 +56,13 @@ main > div#music-img{
 main > div#container{
     width: 85%;
     margin: auto;
-    border: 1px solid green;
 }
 
 main > div#container > h1{
     text-align: center;
     font-size: 24px;
     font-weight: 900;
-    margin: 30px 0 20px;
+    margin: 20px 0;
     color: var(--neutral3);
 }
 
@@ -81,25 +79,86 @@ main > div#container > p{
 
 main > div#container > div#plan{
     width: 100%;
-    padding: 20px;
+    padding: 15px;
+    margin-bottom: 25px;
     border-radius: 10px;
     background-color: hsla(225, 100%, 94%, 0.4);
 }
 
 main > div#container > div#plan > div#music-icon{
     display: inline-block;
-    width: 29%;
-
+    position: relative;
+    top: 2.5px;
+    width: 25%;
+    
 }
 
 main > div#container > div#plan > div#type-plan{
     display: inline-block;
-    width: 39%;
+    position: relative;
+    top: -5.5px;
+    width: 53%;
+}
+
+main > div#container > div#plan > div#type-plan > h2{
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--neutral3);
+}
+
+main > div#container > div#plan > div#type-plan > p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--neutral2);
 }
 
 main > div#container > div#plan > a{
+    display: inline;
+    float: right;
+    position: relative;
+    top: 19.5px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 20%;
+    color: var(--primary2);
+}
+
+main > div#container > div#plan > a:hover{
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.7);   /* Verificar depois! */
+}
+
+main > div#container > button[type="button"]{
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary2);
+    color: var(--primary1);
+    box-shadow: 0px 10px 5px var(--primary1); /* Verificar essa sombra */
+    cursor: pointer;
+}
+
+main > div#container > button[type="button"]:hover{
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+main > div#container > a{
     display: inline-block;
-    width: 29%;
+    position: relative;
+    left: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 20px auto;
+    text-decoration: none;
+    color: var(--neutral2);
+    transform: translateX(-50%);
+}
+
+main > div#container > a:hover{
+    color: var(--neutral3);
 }
 
 /* Footer style */
@@ -122,7 +181,7 @@ footer > div.attribution{
 }
 
 footer > div.attribution > a{
-    color: var(--primary2);
+    color: var(--neutral2);
 }
 
 
