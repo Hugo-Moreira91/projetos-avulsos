@@ -43,6 +43,7 @@ main{
     height: 85vh;
     background-color: var(--neutral1);
     border-radius: 20px;
+    box-shadow: 1px 1px 10px hsla(224, 23%, 55%, 0.2);
     overflow: hidden;
     transform: translate(-50%, -50%);
 }
@@ -121,11 +122,12 @@ main > div#container > div#plan > a{
     font-weight: 700;
     width: 20%;
     color: var(--primary2);
+    transition: color .2s, text-decoration .2s ease-in-out;
 }
 
 main > div#container > div#plan > a:hover{
     text-decoration: none;
-    color: hsla(245, 75%, 52%, 0.7);   /* Verificar depois! */
+    color: hsla(245, 75%, 52%, 0.6);   /* Verificar depois! */
 }
 
 main > div#container > button[type="button"]{
@@ -137,12 +139,13 @@ main > div#container > button[type="button"]{
     border-radius: 10px;
     background-color: var(--primary2);
     color: var(--primary1);
-    box-shadow: 0px 10px 5px var(--primary1); /* Verificar essa sombra */
+    box-shadow: 0px 15px 10px hsla(245, 75%, 52%, 0.2); /* Verificar essa sombra */
     cursor: pointer;
+    transition: background-color .3s;
 }
 
 main > div#container > button[type="button"]:hover{
-    background-color: hsla(245, 75%, 52%, 0.7);
+    background-color: hsla(245, 75%, 52%, 0.6);
 }
 
 main > div#container > a{
@@ -154,6 +157,7 @@ main > div#container > a{
     margin: 20px auto;
     text-decoration: none;
     color: var(--neutral2);
+    transition: color .2s;
     transform: translateX(-50%);
 }
 
@@ -182,6 +186,11 @@ footer > div.attribution{
 
 footer > div.attribution > a{
     color: var(--neutral2);
+    transition: text-decoration .2s ease-in-out;
+}
+
+footer > div.attribution > a:hover{
+    text-decoration: none;
 }
 
 
