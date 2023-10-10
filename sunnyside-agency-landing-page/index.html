@@ -2,67 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  -->
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <header>
+    <!-- ATENÇÃO! Para alterar as imagens, inicialmente de mobile, para desktop, podemos realizar isso via CSS
+    (usando as medias queries):
+    na media query de desktop, estilizar da seguinte maneira
+  
+    img{ content: url([AQUI ENTRA O CAMINHO DA IMAGEM PARA DESKTOP]); } -->
+    <img id="logo" src="images/logo.svg" alt="Logo of the page">
+    <menu>
+      <ul>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </menu>
+    <h1>We are creatives</h1>
+    <img id="arrow" src="images/icon-arrow-down.svg" alt="Arrow down">
+  </header>
 
-  We are creatives
+  <main>
+    <img src="images/mobile/image-transform.jpg" alt="Egg image">
+    <section>
+      <h2>Transform your brand</h2>
+      <p>
+        We are a full-service creative agency specializing in helping brands grow fast.
+        Engage your clients through compelling visuals that do most of the marketing for you.
+      </p>
+      <a href="#">Learn more</a>
+    </section>
 
-  Transform your brand
+    <img src="images/mobile/image-stand-out.jpg" alt="Pink Glass">
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+    <section>
+      <h2>Stand out to the right audience</h2>
+      <p>
+        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.
+      </p>
+      <a href="#">Learn more</a>
+    </section>
 
-  Learn more
+    <section> <!-- Vai receber um background-image das cerejas -->
+      <h2>Graphic design</h2>
+      <p>
+        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.
+      </p>
+    </section>
 
-  Stand out to the right audience
+    <section> <!-- Vai receber um background-image da tangerina -->
+      <h2>Photography</h2>
+      <p>
+        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      </p>
+    </section>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+    <section id="testimonials">
+      <h2>Client testimonials</h2>
+      <div class="client" id="person-emily">
+        <img src="images/image-emily.jpg" alt="Emily photo">
+        <p class="opinion">
+          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+        </p>
+        <p class="name-client">Emily R.</p>
+        <p class="occupation">Marketing Director</p>
+      </div>
+      <div class="client" id="person-thomas">
+        <img src="images/image-thomas.jpg" alt="Thomas photo">
+        <p class="opinion">
+          Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.
+        </p>
+        <p class="name-client">Thomas S.</p>
+        <p class="occupation">Chief Operating Officer</p>
+      </div>
+      <div class="client" id="person-jennie">
+        <img src="images/image-jennie.jpg" alt="Jennie photo">
+        <p class="opinion">
+          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+        </p>
+        <p class="name-client">Jennie F.</p>
+        <p class="occupation">Business Owner</p>
+      </div>
+    </section>
 
-  Learn more
+    <section id="gallery">
+      <img id="milk" src="images/mobile/image-gallery-milkbottles.jpg" alt="Bottles of milk">
+      <img id="orange" src="images/mobile/image-gallery-orange.jpg" alt="Orange image">
+      <img id="cone" src="images/mobile/image-gallery-cone.jpg" alt="Cone image">
+      <img id="sugar" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="Tower of sugar cubes">
+    </section>
+  </main>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <img id="logo-footer" src="images/logo.svg" alt="Logo of the page"> <!-- Aqui será necessário alterar a cor das letras da logo via <path> dentro da tag <svg> da imagem -->
+    <div id="menu-footer">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+    </div>
+    <div id="social-medias">
+      <img src="images/icon-facebook.svg" alt="Facebook icon">
+      <img src="images/icon-instagram.svg" alt="Instagram icon">
+      <img src="images/icon-twitter.svg" alt="Twitter icon">
+      <img src="images/icon-pinterest.svg" alt="Pinterest icon">
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="external">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank" rel="external">Hugo Moreira</a>.
+    </div>
+  </footer>
 </body>
 </html>
