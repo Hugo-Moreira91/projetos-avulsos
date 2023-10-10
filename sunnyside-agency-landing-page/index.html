@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (min-width: 375px)"> <!-- media="screen and (width: 375px)" -->
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 
@@ -21,16 +22,26 @@
   
     img{ content: url([AQUI ENTRA O CAMINHO DA IMAGEM PARA DESKTOP]); } -->
     <img id="logo" src="images/logo.svg" alt="Logo of the page">
-    <menu>
-      <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
-    </menu>
-    <h1>We are creatives</h1>
-    <img id="arrow" src="images/icon-arrow-down.svg" alt="Arrow down">
+    <div id="menu-toggle" onclick="toggleMenu()">
+      <img src="images/icon-hamburger.svg" alt="Hamburguer icon">
+    </div>
+    <nav id="nav-list" style="display: none;">
+      <div id="balloon">
+        <ul id="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <a href="#"><li>CONTACT</li></a>
+        </ul>
+      </div>
+    </nav>
+    <div id="main-title">
+      <h1>
+        <span class="space">W</span>E<span style="margin-right: 21px;"></span><span class="space">A</span><span class="space">R</span><span class="space">E</span><br></span><span class="space">C</span><span class="space">R</span><span class="space">E</span><span class="space">A</span><span class="space">T</span><span class="space">I</span><span class="space">V</span><span class="space">E</span><span class="space">S</span>
+        <!-- WE ARE CREATIVES -->
+      </h1>
+      <img id="arrow" src="images/icon-arrow-down.svg" alt="Arrow down">
+    </div>
   </header>
 
   <main>
@@ -112,15 +123,17 @@
       <a href="#">Projects</a>
     </div>
     <div id="social-medias">
-      <img src="images/icon-facebook.svg" alt="Facebook icon">
-      <img src="images/icon-instagram.svg" alt="Instagram icon">
-      <img src="images/icon-twitter.svg" alt="Twitter icon">
-      <img src="images/icon-pinterest.svg" alt="Pinterest icon">
+      <a href="#"><img src="images/icon-facebook.svg" alt="Facebook icon"></a>
+      <a href="#"><img src="images/icon-instagram.svg" alt="Instagram icon"></a>
+      <a href="#"><img src="images/icon-twitter.svg" alt="Twitter icon"></a>
+      <a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest icon"></a>
     </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="external">Frontend Mentor</a>.
       Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank" rel="external">Hugo Moreira</a>.
     </div>
   </footer>
+
+  <script src="functions/menu.js"></script>
 </body>
 </html>
