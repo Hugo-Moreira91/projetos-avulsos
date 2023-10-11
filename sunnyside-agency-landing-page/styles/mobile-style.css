@@ -33,8 +33,7 @@
 }
 
 body{
-    width: 375px; /* Alterar ao final para width: 100%; */
-    /*height: 100vh;*/
+    width: 100%;
 }
 
 header{
@@ -343,4 +342,39 @@ footer > div#menu-footer > a:nth-last-child(2){
 
 footer > div#menu-footer a:hover{
     color: var(--neutral5);
+}
+
+footer > div#social-medias{
+    margin-bottom: 60px;
+}
+
+footer > div#social-medias a{
+    margin: 0 20px;
+}
+
+footer > div#social-medias a#facebook:hover{
+    content: url('../images/icon-facebook-hover.svg');
+}
+
+footer > div#social-medias a#instagram:hover{
+    content: url('../images/icon-instagram-hover.svg');
+}
+
+footer > div#social-medias a#pinterest:hover{
+    content: url('../images/icon-pinterest-hover.svg');
+}
+
+footer > div#social-medias a#twitter:hover{
+    content: url('../images/icon-twitter-hover.svg');
+}
+
+footer > div.attribution{
+    font-size: 11px; 
+    text-align: center;
+    padding: 5px 0;
+    color: var(--neutral1);
+}
+
+footer > div.attribution a{
+    color: hsl(228, 45%, 44%);
 }
