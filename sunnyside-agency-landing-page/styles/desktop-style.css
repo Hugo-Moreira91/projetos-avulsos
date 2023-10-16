@@ -38,45 +38,25 @@ body{
 
 header{
     position: relative;
-    background: transparent url('../images/mobile/image-header.jpg') center center/cover no-repeat;
-    height: 536px;
+    background: transparent url('../images/desktop/image-header.jpg') center center/cover no-repeat;
+    padding: 40px 35px;
+    height: 800px;
 }
 
 header > img#logo{
-    margin-top: 35px;
-    margin-left: 20px;
+    width: 186px;
+    height: 36px;
 }
 
 header > div#menu-toggle{
-    display: block;
-    float: right;
-    width: 24px;
-    height: 18px;
-    margin-top: 38px;
-    margin-right: 20px;
-    cursor: pointer;
+    display: none;
 }
 
 header > nav{
-    display: none;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    width: calc(100% - 40px);
-    background-color: var(--neutral5);
-    z-index: 2;
-    transform: translate(-50%, -50%);
-}
-
-header > nav > div#balloon::before{
-    content: "";
-    position: absolute;
-    top: -24px;
-    right: 0px;
-    border-width: 0 0 24px 24px;
-    border-style: solid;
-    border-color: transparent transparent var(--neutral5) transparent;
+    display: inline;
+    position: relative;
+    top: 7px;
+    float: right;
 }
 
 header > nav > div#balloon > ul{
@@ -84,13 +64,14 @@ header > nav > div#balloon > ul{
 }
 
 header > nav > div#balloon > ul li{
-    margin: 35px 0;
+    display: inline-block;
+    margin-left: 50px;
 }
 
 header > nav > div#balloon > ul > li a{
     font-family: var(--font2);
     font-size: 18px;
-    color: var(--neutral3);
+    color: var(--neutral5);
     text-decoration: none;
     transition: color .4s;
 }
@@ -100,69 +81,74 @@ header > nav > div#balloon > ul > li a:hover{
 }
 
 header > nav > div#balloon > ul > a{
-    display: block;
+    display: inline-block;
+    position: relative;
+    top: -18px;
     font-family: var(--font1);
     font-size: 18px;
     text-decoration: none;
     color: var(--neutral1);
-    background-color: var(--primary2);
-    margin: 0 auto 40px;
-    width: 45%;
-    height: 50px;
+    background-color: var(--neutral5);
+    margin-left: 50px;
+    width: 160px;
+    height: 60px;
     border-radius: 35px;
     transition: color .4s, background-color .4s;
 }
 
 header > nav > div#balloon > ul > a:hover{
     color: var(--neutral5);
-    background-color: var(--neutral2);
+    background-color: hsl(200, 100%, 72%);
 }
 
 header > nav > div#balloon > ul > a > li{
     position: relative;
     top: 50%;
     left: 50%;
+    margin: 0;
     transform: translate(-50%, -50%);
 }
 
 header > div#main-title{
     position: absolute;
-    top: 50%;
+    top: 41%;
     left: 50%;
-    width: 85%;
+    width: 100%;
     text-align: center;
-    z-index: 1;
     transform: translate(-50%, -50%);
 }
 
 header > div#main-title > h1{
     font-family: var(--font1);
-    font-size: 40px;
+    font-size: 55px;
     font-weight: 900;
-    margin-bottom: 60px;
-    letter-spacing: 7px;
+    margin-bottom: 100px;
+    letter-spacing: 8px;
     color: var(--neutral5);
 }
 
-/* Header end */
-
-/* Starting main */
-
-main > img{
+main{
     width: 100%;
-    height: 268px;
+}
+
+main > img#egg{
+    content: url('../images/desktop/image-transform.jpg');
+    width: 50%;
+    float: right;
 }
 
 main > section.text{
-    margin: 50px auto;
-    text-align: center;
-    width: 88%;
+    display: inline;
+    width: 50%;
+    height: 600px;
+    text-align: left;
+    padding: 150px 135px;     
 }
 
 main > section.text > h2{
     font-family: var(--font1);
     font-weight: 900;
-    font-size: 32px;
+    font-size: 40px;        
     color: var(--neutral1);
 }
 
@@ -171,16 +157,14 @@ main > section.text > p{
     color: var(--neutral3);
     font-size: 18px;
     line-height: 28px;
-    margin: 30px 0 38px;
+    margin: 30px 0 58px;
 }
-
 main > section.text > a{
     display: block;
-    margin: auto;
     font-family: var(--font1);
     text-decoration: none;
     color: var(--neutral1);
-    width: 126px;
+    width: 132px;
     height: 10px;
     border-radius: 35px;
     transition: background-color .3s;
@@ -205,78 +189,101 @@ main > section.text > a#learn2:hover{
 main > section.text > a > span{
     position: relative;
     bottom: 13px;
-    left: 0;
+    left: 9.5px;
 }
 
-section#cherry{
-    background: transparent url('../images/mobile/image-graphic-design.jpg') center center/cover no-repeat;
-    color: var(--primary3);
+main > section#first-text{
+    float: left;
 }
 
-section#tangerine{
-    background: transparent url('../images/mobile/image-photography.jpg') center center/cover no-repeat;
-    color: var(--primary4);
+main > section#second-text{
+    float: right;
+}
+
+main > img#glass{
+    content: url('../images/desktop/image-stand-out.jpg');
+    width: 50%;
+    float: left;
+}
+
+main > div#container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 section.img-text{
-    position: relative;
-    width: 100%;
-    height: 596px;
+    flex-grow: 1;
+    display: flex;
+    flex-basis: 50%;
+    height: 600px;
+}
+
+main > div#container > section#cherry{
+    background: transparent url('../images/desktop/image-graphic-design.jpg') center center/cover no-repeat;
+    color: var(--primary3);
+}
+
+main > div#container > section#tangerine{
+    background: transparent url('../images/desktop/image-photography.jpg') center center/cover no-repeat;
+    color: var(--primary4);
 }
 
 section.img-text > div.container-text{
-    position: absolute;
-    top: 85%;
-    left: 50%;
+    position: relative;
+    top: 35%;
+    left: 28%;
     text-align: center;
-    width: 90%;
+    width: 55%;
     margin: auto;
-    transform: translate(-50%, -85%);
+    transform: translate(-50%, -35%);
 }
 
 section.img-text > div.container-text > h2{
     font-family: var(--font1);
     font-weight: 900;
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 30px;
 }
 
 section.img-text > div.container-text > p{
     font-family: var(--font2);
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
 }
 
 main > section#testimonials{
-    margin: 60px auto 0;
+    margin: 180px auto;
     text-align: center;
-    width: 88%;
+    width: 100%;         
 }
 
 main > section#testimonials > h2{
     font-family: var(--font1);
     font-weight: 900;
-    font-size: 18px;
-    letter-spacing: 3px;
+    font-size: 20px;
+    letter-spacing: 5px;
     color: var(--neutral4);
 }
 
 main > section#testimonials > div.client{
-    margin: 60px 0;
+    display: inline-block;
+    width: 350px;                
+    margin: 80px 20px;            
 }
 
 main > section#testimonials > div.client > img{
     border-radius: 50%;
     width: 72px;
     height: 72px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 main > section#testimonials > div.client > p.opinion{
     font-family: var(--font2);
     font-size: 18px;
     line-height: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     color: var(--neutral2);
 }
 
@@ -302,7 +309,23 @@ main > section#gallery{
 
 main > section#gallery img{
     display: inline;
-    width: 50%;
+    width: 25%;
+}
+
+main > section#gallery > img#milk{
+    content: url('../images/desktop/image-gallery-milkbottles.jpg');
+}
+
+main > section#gallery > img#orange{
+    content: url('../images/desktop/image-gallery-orange.jpg');
+}
+
+main > section#gallery > img#cone{
+    content: url('../images/desktop/image-gallery-cone.jpg');
+}
+
+main > section#gallery > img#sugar{
+    content: url('../images/desktop/image-gallery-sugarcubes.jpg');
 }
 
 footer{
@@ -325,7 +348,7 @@ footer > div#menu-footer{
 
 footer > div#menu-footer a{
     font-family: var(--font2);
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     color: var(--primary3);
     transition: color .3s;

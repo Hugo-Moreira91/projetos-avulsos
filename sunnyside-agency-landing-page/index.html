@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
-  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (width: 375px)"> 
+  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (width: 375px)">
+  <link rel="stylesheet" href="styles/desktop-style.css" media="screen and (width: 1440px)">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
     <div id="menu-toggle" onclick="toggleMenu()">
       <img src="images/icon-hamburger.svg" alt="Hamburguer icon">
     </div>
-    <nav id="nav-list" style="display: none;">
+    <nav id="nav-list">
       <div id="balloon">
         <ul id="nav-links">
           <li><a href="#">About</a></li>
@@ -30,15 +31,15 @@
     </nav>
     <div id="main-title">
       <h1>
-        <span class="space">W</span>E<span style="margin-right: 21px;"></span><span class="space">A</span><span class="space">R</span><span class="space">E</span><br></span><span class="space">C</span><span class="space">R</span><span class="space">E</span><span class="space">A</span><span class="space">T</span><span class="space">I</span><span class="space">V</span><span class="space">E</span><span class="space">S</span>
+        WE ARE CREATIVES
       </h1>
       <img id="arrow" src="images/icon-arrow-down.svg" alt="Arrow down">
     </div>
   </header>
 
   <main>
-    <img src="images/mobile/image-transform.jpg" alt="Egg image">
-    <section class="text">
+    <img id="egg" src="images/mobile/image-transform.jpg" alt="Egg image">
+    <section id="first-text" class="text">
       <h2>Transform your brand</h2>
       <p>
         We are a full-service creative agency specializing in helping brands grow fast.
@@ -47,9 +48,9 @@
       <a id="learn1" href="#"><span>LEARN MORE</span></a>
     </section>
 
-    <img src="images/mobile/image-stand-out.jpg" alt="Pink Glass">
+    <img id="glass" src="images/mobile/image-stand-out.jpg" alt="Pink Glass">
 
-    <section class="text">
+    <section id="second-text" class="text">
       <h2>Stand out to the right audience</h2>
       <p>
         Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.
@@ -57,27 +58,28 @@
       <a id="learn2" href="#"><span>LEARN MORE</span></a>
     </section>
 
-    <section class="img-text" id="cherry"> <!-- Vai receber um background-image das cerejas -->
-      <div class="container-text">
-        <h2>Graphic Design</h2>
-        <p>
-          Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.
-        </p>
-      </div>
-    </section>
-
-    <section class="img-text" id="tangerine"> <!-- Vai receber um background-image da tangerina -->
-      <div class="container-text">
-        <h2>Photography</h2>
-        <p>
-          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-        </p>
-      </div>
-    </section>
+    <div id="container">
+      <section class="img-text" id="cherry"> <!-- Vai receber um background-image das cerejas -->
+        <div class="container-text">
+          <h2>Graphic Design</h2>
+          <p>
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.
+          </p>
+        </div>
+      </section>
+      <section class="img-text" id="tangerine"> <!-- Vai receber um background-image da tangerina -->
+        <div class="container-text">
+          <h2>Photography</h2>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+        </div>
+      </section>
+    </div>
 
     <section id="testimonials">
       <h2>
-        <span class="test-space">C</span><span class="test-space">L</span><span class="test-space">I</span><span class="test-space">E</span><span class="test-space">N</span><span class="test-space">T</span><span style="margin-right: 6px;"></span><span class="test-space">T</span><span class="test-space">E</span><span class="test-space">S</span><span class="test-space">T</span><span class="test-space">I</span><span class="test-space">M</span><span class="test-space">O</span><span class="test-space">N</span><span class="test-space">I</span><span class="test-space">A</span><span class="test-space">L</span><span class="test-space">S</span>
+        CLIENT TESTIMONIALS
       </h2>
       <div class="client" id="person-emily">
         <img src="images/image-emily.jpg" alt="Emily photo">
