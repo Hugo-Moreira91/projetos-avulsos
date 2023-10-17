@@ -56,12 +56,14 @@ main > div#text{
 
 main > div#text > h1{
     font-size: 22px;
+    font-weight: 700;
     margin: 20px 0;
     color: var(--darkblue);
 }
 
 main > div#text > p{
     font-size: 15px;
+    font-weight: 400;
     margin-bottom: 20px;
     color: var(--grayishblue);
 }
