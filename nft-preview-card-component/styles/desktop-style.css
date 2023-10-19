@@ -1,0 +1,202 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: Outfit;
+    src: url('../fonts/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+:root{
+    /* Primary colors */
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* Neutral colors */
+    --darkbluemainbg: hsl(217, 54%, 11%); /* Main background */
+    --darkbluecardbg: hsl(216, 50%, 16%); /* Card background */
+    --darkblueline: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkbluemainbg);
+}
+
+main{
+    width: 25%;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: var(--darkbluecardbg);
+}
+
+main > div.img-container{
+    position: relative;
+    display: inline-block;
+    width: 310px;
+    height: 310px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main > div.img-container > img{
+    width: 100%;
+}
+
+main > div.img-container > a > div.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%, .5); 
+    display: none; 
+    text-align: center;
+    padding-top: 50%;
+}
+
+main > div.img-container:hover div.overlay{
+    display: block;
+}
+
+main > div.img-container > a > div.overlay > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main > h1{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+main > h1 > a{
+    text-decoration: none;
+    color: var(--white);
+    transition: color .3s;
+}
+
+main > h1 > a:hover{
+    color: var(--cyan);
+}
+
+main > p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 15px;
+    color: var(--softblue);
+}
+
+main > div.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+main > div.container > div#eth{
+    flex: 1;
+}
+
+main > div.container > div#eth > span{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cyan);
+    position: relative; 
+    top: -3px;
+    left: 3px;
+    transform: translate(-3px, 3px);
+}
+
+main > div.container > div#days-left{
+    flex: 1;
+    text-align: right;
+}
+
+main > div.container > div#days-left > span{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--softblue);
+    position: relative; 
+    top: -3px;
+    left: 3px;
+    transform: translate(-3px, 3px);
+}
+
+hr{
+    display: inline-block;
+    border: none;
+    width: 100%;
+    margin: 15px 0;
+    border-top: 1px solid var(--darkblueline);
+}
+
+main > div#creator > img{
+    width: 33px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+main > div#creator > span{
+    display: inline-block;
+    position: relative;
+    top: -6.5px;
+    left: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--softblue);
+    transform: translate(5px, -6.5px);
+}
+
+main > div#creator > span > a{
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--white);
+    transition: color .3s;
+}
+
+main > div#creator > span > a:hover{
+    color: var(--cyan);
+}
+
+footer{
+    display: none;
+}
+
+/*
+footer{
+    width: 100vw;
+    padding: 5px 0;
+    color: var(--softblue);
+    background-color: var(--darkbluecardbg);
+}
+
+footer > div.attribution{
+    font-size: 11px; 
+    text-align: center;
+}
+
+footer > div.attribution > a{
+    color: var(--white);
+    transition: color .3s;
+}
+
+footer > div.attribution > a:hover{
+    color: var(--cyan);
+    text-decoration: none;
+}
+*/
