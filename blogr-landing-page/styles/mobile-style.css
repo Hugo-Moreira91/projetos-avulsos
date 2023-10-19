@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: Overpass;
+    src: url('../fonts/Overpass-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Ubuntu-400;
+    src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Ubuntu-500;
+    src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Ubuntu-700;
+    src: url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+}
+
+:root{
+    /* Primary Colors */
+    --lightred: hsl(356, 100%, 66%); /* CTA text */
+    --verylightred: hsl(355, 100%, 74%); /* CTA hover background */
+    --verydarkblue: hsl(208, 49%, 24%); /* Headings */
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%); /* Text */
+    --grayishblue: hsl(240, 2%, 79%); /* Footer text */
+    --verydarkgrayishblue: hsl(207, 13%, 34%); /* Body copy */
+    --verydarkblackblue: hsl(240, 10%, 16%); /* Footer background */
+
+    /* Gradient */
+
+    /* Background gradient - Intro/CTA mobile nav --> Botão de sign up dentro do menu hamburguer - versão mobile */
+    --verylightredgrad: hsl(13, 100%, 72%);
+    --lightredgrad: hsl(353, 100%, 62%);
+
+    /* Background gradient - body */
+    --verydarkgrayblue: hsl(237, 17%, 21%);
+    --verydarkdesaturatedblue: hsl(237, 23%, 32%);
+
+    /* Fonts */
+    --overpass: Overpass;
+    --ubunturegular: Ubuntu-400;
+    --ubuntumedium: Ubuntu-500;
+    --ubuntubold: Ubuntu-700;
+}
