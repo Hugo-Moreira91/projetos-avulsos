@@ -16,7 +16,7 @@
 </head>
 <body>
   <header>
-    <img src="images/logo.svg" alt="Logo of the page">
+    <img id="logo" src="images/logo.svg" alt="Logo of the page">
     <img id="toggle-menu" src="images/icon-hamburger.svg" alt="Hamburguer icon">
     <img id="close-menu" src="images/icon-close.svg" alt="Close icon">
 
@@ -51,18 +51,21 @@
         <li><a href="#">Newsletter</a></li>
         <li><a href="#">LinkedIn</a></li>
       </ul>
+
+      <hr>
       
-      <div id="connection-account" class="section-menu">
-        <a href="#">Login</a>
+      <div id="connection-account">
+        <a class="login" href="#">Login</a>
         <a class="sign-up" href="#"><span>Sign Up</span></a>
       </div>
     </menu>
 
-    <h1>A modern publishing platform</h1>
-    <p>Grow your audience and build your online brand</p>
-
-    <a id="start" class="build" href="#"><span>Start for Free</span></a>
-    <a id="more-info" class="build" href="#"><span>Learn More</span></a>
+    <div id="main-header">
+      <h1>A modern publishing platform</h1>
+      <p>Grow your audience and build your online brand</p>
+      <a id="start" class="build" href="#"><span>Start for Free</span></a>
+      <a id="more-info" class="build" href="#"><span>Learn More</span></a>
+    </div>
   </header>
 
   <main>
@@ -113,5 +116,8 @@
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </footer>
+
+  <script src="functions/menu-mobile.js"></script>
+
 </body>
 </html>
