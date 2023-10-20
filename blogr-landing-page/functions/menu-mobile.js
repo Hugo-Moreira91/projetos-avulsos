@@ -20,49 +20,6 @@ menuIcon.addEventListener('click', function(){
     closeIcon.style.display = 'block';
 
     menuDisplay.style.display = 'block';
-
-    product.addEventListener('click', function(){
-        if(productItens.style.display === 'none'){
-            productItens.style.display = 'block';
-            product.style.color = 'hsl(207, 13%, 34%)';
-            arrowProduct.src = 'images/icon-arrow-dark-up.svg';
-            arrowProduct.alt = 'Arrow up';
-        }else{
-            productItens.style.display = 'none';
-            product.style.color = 'hsl(208, 49%, 24%)';
-            arrowProduct.src = 'images/icon-arrow-dark.svg';
-            arrowProduct.alt = 'Arrow down';
-        }
-    });
-
-    company.addEventListener('click', function(){
-        if(companyItens.style.display === 'none'){
-            companyItens.style.display = 'block';
-            company.style.color = 'hsl(207, 13%, 34%)';
-            arrowCompany.src = 'images/icon-arrow-dark-up.svg';
-            arrowCompany.alt = 'Arrow up';
-        }else{
-            companyItens.style.display = 'none';
-            company.style.color = 'hsl(208, 49%, 24%)';
-            arrowCompany.src = 'images/icon-arrow-dark.svg';
-            arrowCompany.alt = 'Arrow down';
-        }
-    });
-
-    connect.addEventListener('click', function(){
-        if(connectItens.style.display === 'none'){
-            connectItens.style.display = 'block';
-            connect.style.color = 'hsl(207, 13%, 34%)';
-            arrowConnect.src = 'images/icon-arrow-dark-up.svg';
-            arrowConnect.alt = 'Arrow up';
-        }else{
-            connectItens.style.display = 'none';
-            connect.style.color = 'hsl(208, 49%, 24%)';
-            arrowConnect.src = 'images/icon-arrow-dark.svg';
-            arrowConnect.alt = 'Arrow down';
-        }
-    });
-
 });
 
 closeIcon.addEventListener('click', function(){
@@ -91,4 +48,46 @@ closeIcon.addEventListener('click', function(){
     }
 
     menuDisplay.style.display = 'none';
+});
+
+product.addEventListener('click', function(){
+    if(productItens.style.display === 'none'){
+        productItens.style.display = 'block';
+        product.style.color = 'hsl(207, 13%, 34%)';
+        arrowProduct.src = 'images/icon-arrow-dark-up.svg';
+        arrowProduct.alt = 'Arrow up';
+    }else{
+        productItens.style.display = 'none';
+        product.style.color = 'hsl(208, 49%, 24%)';
+        arrowProduct.src = 'images/icon-arrow-dark.svg';
+        arrowProduct.alt = 'Arrow down';
+    }
+});
+
+company.addEventListener('click', function(){
+    if(companyItens.style.display === 'none'){
+        companyItens.style.display = 'block';
+        company.style.color = 'hsl(207, 13%, 34%)';
+        arrowCompany.src = 'images/icon-arrow-dark-up.svg';
+        arrowCompany.alt = 'Arrow up';
+    }else{
+        companyItens.style.display = 'none';
+        company.style.color = 'hsl(208, 49%, 24%)';
+        arrowCompany.src = 'images/icon-arrow-dark.svg';
+        arrowCompany.alt = 'Arrow down';
+    }
+});
+
+connect.addEventListener('click', function(){
+    if(connectItens.style.display === 'none'){
+        connectItens.style.display = 'block';
+        connect.style.color = 'hsl(207, 13%, 34%)';
+        arrowConnect.src = 'images/icon-arrow-dark-up.svg';
+        arrowConnect.alt = 'Arrow up';
+    }else{
+        connectItens.style.display = 'none';
+        connect.style.color = 'hsl(208, 49%, 24%)';
+        arrowConnect.src = 'images/icon-arrow-dark.svg';
+        arrowConnect.alt = 'Arrow down';
+    }
 });
