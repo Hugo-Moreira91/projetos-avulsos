@@ -63,6 +63,7 @@ html, body{
 */
 
 body{
+    position: absolute;
     width: 375px;
 }
 
@@ -96,8 +97,9 @@ header > img#close-menu{
 header > menu{
     display: none;       /* Menu começa fechado */
     text-align: center;
-    position: relative;
-    top: 25px;
+    position: absolute;
+    top: 120px;
+    width: 325px;
     z-index: 2;
     padding: 15px 20px;
     background-color: var(--white);
@@ -111,9 +113,15 @@ header > menu > div.section-menu{
     font-family: var(--overpass);
     font-weight: 600;
     font-size: 18px;
-    margin: 10px 0;         /* Alterar depois */
+    margin: 10px 0;
     color: var(--verydarkblue);
     cursor: pointer;
+}
+
+header > menu > div.section-menu img{
+    position: relative;
+    top: -1px;
+    left: 3px;
 }
 
 header > menu > div.section-menu:hover{
@@ -121,7 +129,6 @@ header > menu > div.section-menu:hover{
 }
 
 header > menu > ul.list-menu{
-    display: none;
     list-style-type: none;
     background-color: hsl(240, 2%, 79%, .3);
     border-radius: 5px;
