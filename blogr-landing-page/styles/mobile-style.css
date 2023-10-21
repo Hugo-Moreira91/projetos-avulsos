@@ -272,5 +272,20 @@ header > div#main-header > a#more-info:hover{
 /* Estilização do conteúdo principal - início */
 
 main{
+    position: relative;
     z-index: 1;
+    padding: 125px 25px;
+    text-align: center;
+}
+
+main > section#design{
+    width: 100%;
+}
+
+main > section.text h2, section.text h3{
+    font-family: var(--overpass);
+    font-weight: 600;
+    font-size: 26px;
+    width: 95%;
+    margin: auto;
 }
