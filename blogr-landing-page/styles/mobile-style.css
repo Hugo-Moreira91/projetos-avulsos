@@ -55,21 +55,14 @@
     box-sizing: border-box;
 }
 
-/*
 html, body{
     width: 100%;
     height: 100vh;
 }
-*/
-
-body{
-    position: absolute;
-    width: 375px;
-}
 
 header{
     width: 100%;
-    height: 525px; /* Alterar depois */
+    height: 525px; 
     padding: 50px 25px;
     background: url('../images/bg-pattern-intro-mobile.svg') 36% 35%/337% no-repeat, linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     border-bottom-left-radius: 80px;
@@ -274,18 +267,151 @@ header > div#main-header > a#more-info:hover{
 main{
     position: relative;
     z-index: 1;
-    padding: 125px 25px;
+    padding: 115px 0;
     text-align: center;
 }
 
 main > section#design{
     width: 100%;
+    padding: 0 20px;
 }
 
 main > section.text h2, section.text h3{
     font-family: var(--overpass);
     font-weight: 600;
     font-size: 26px;
-    width: 95%;
+    width: 90%;
     margin: auto;
+    color: var(--verydarkblue);
+}
+
+main > section#design > img{
+    width: 100%;
+    margin: 40px 0;
+}
+
+main > section.text p{
+    font-family: var(--overpass);
+    font-weight: 300;
+    font-size: 16px;
+    width: 91%;
+    margin: 20px auto;
+    line-height: 25px;
+    color: var(--verydarkgrayishblue);
+}
+
+main > section#infrastructure{
+    position: relative;
+    top: 230px;
+    width: 100%;
+    height: 560px;
+    background: url('../images/bg-pattern-circles.svg') 50% 570%/160% no-repeat, linear-gradient(135deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-radius: 0 80px;
+}
+
+main > section#infrastructure > img{
+    position: absolute;
+    top: -33%;
+    width: 325px;
+    transform: translateX(-50%);
+}
+
+main > section#infrastructure > div#container-text{
+    font-family: var(--overpass);
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    width: 325px;
+    color: var(--white);
+    transform: translate(-50%, -50%);
+}
+
+main > section#infrastructure > div#container-text > h2{
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main > section#infrastructure > div#container-text > p{
+    font-weight: 300;
+    font-size: 16px;
+    width: 91%;
+    margin: auto;
+    line-height: 25px;
+}
+
+main > section#free-app{
+    margin-top: 300px;
+    padding: 0 20px;
+}
+
+main > section#free-app > img{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* Footer style */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+    padding: 5px 0;
+    background-color: var(--verydarkblackblue);
+    color: var(--grayishblue);
+    border-top-right-radius: 80px;
+}
+
+footer > img#logo{
+    margin: 75px 0 80px;
+}
+
+footer > menu#menu-footer{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+footer > menu#menu-footer > div.list-footer{
+    font-family: var(--overpass);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: var(--white);
+}
+
+footer > menu#menu-footer ul{
+    list-style-type: none;
+}
+
+footer > menu#menu-footer ul li{
+    margin-bottom: 10px;
+}
+
+footer > menu#menu-footer ul li:nth-last-child(1){
+    margin-bottom: 40px;
+}
+
+footer > menu#menu-footer ul li a{
+    font-family: var(--overpass);
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--grayishblue);
+}
+
+footer > menu#menu-footer ul li a:hover{
+    text-decoration: underline;
+}
+
+footer > div.attribution{
+    font-size: 11px;
+}
+
+footer > div.attribution > a{
+    color: hsl(356, 100%, 66%);
+    transition: color .3s;
+}
+
+footer > div.attribution > a:hover{
+   color: hsl(355, 100%, 74%);
 }
