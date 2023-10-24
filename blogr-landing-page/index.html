@@ -135,7 +135,19 @@
     </div>
   </footer>
 
-  <script src="functions/menu-mobile.js"></script>
+  <script>
+    function loadScript(scriptSrc) {
+      var script = document.createElement("script");
+      script.src = scriptSrc;
+      document.body.appendChild(script);
+    }
+
+    if (window.innerWidth <= 768) { 
+        loadScript("functions/menu-mobile.js");
+    } else {
+        loadScript("functions/menu-desktop.js");
+    }
+  </script>
 
 </body>
 </html>

@@ -68,7 +68,7 @@ header{
     width: 100%;
     height: 525px; 
     padding: 50px 170px;
-    background: url('../images/bg-pattern-intro-desktop.svg') 26% 52%/220% no-repeat, linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background: url('../images/bg-pattern-intro-desktop.svg') 26% 51%/220% no-repeat, linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     border-bottom-left-radius: 80px;
 }
 
@@ -118,7 +118,7 @@ hr{
 header > menu > div#connection-account{
     display: inline;
     float: right;
-    width: 200px;
+    width: 210px;
 }
 
 header > menu > div#connection-account > a.login{
@@ -136,13 +136,18 @@ header > menu > div#connection-account > a.login:hover{
 }
 
 header > menu > div#connection-account > a.sign-up{
+    text-align: center;
+    position: relative;
+    top: -12px;
     display: inline-block;
-    width: 70%;
+    width: 67%;
     height: 45px;
     margin-bottom: 10px;
     text-decoration: none;
     background-color: var(--white);
+    color: var(--lightred);
     border-radius: 100px;
+    transition: background-color .4s, color .4s;
 }
 
 header > menu > div#connection-account > a.sign-up > span{
@@ -150,5 +155,75 @@ header > menu > div#connection-account > a.sign-up > span{
     top: 11.5px;
     font-family: var(--ubuntumedium);
     font-size: 16px;
+}
+
+header > menu > div#connection-account > a.sign-up:hover{
+    background-color: var(--verylightred);
+    color: var(--white);
+}
+
+header > div#main-header{
+    position: relative;
+    top: 37%;
+    left: 50%;
+    text-align: center;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+header > div#main-header > h1{
+    font-family: var(--overpass);
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+header > div#main-header > p{
+    font-family: var(--overpass);
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: var(--white);
+}
+
+header > div#main-header a.build{
+    display: inline-block;
+    width: 135px;
+    height: 45px;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+header > div#main-header > a#start{
+    margin-right: 7px;
+    background-color: var(--white);
     color: var(--lightred);
+    transition: color .3s, background-color .3s;
+}
+
+header > div#main-header > a#more-info{
+    margin-left: 7px;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    transition: color .3s, background-color .3s;
+}
+
+header > div#main-header a span{
+    position: relative;
+    top: 11.5px;
+    font-family: var(--ubuntubold);
+    font-size: 16px;
+}
+
+header > div#main-header > a#start:hover{
+    background-color: var(--verylightred);
+    color: var(--white);
+}
+
+header > div#main-header > a#more-info:hover{
+    background-color: var(--white);
+    color: var(--verylightred);
 }

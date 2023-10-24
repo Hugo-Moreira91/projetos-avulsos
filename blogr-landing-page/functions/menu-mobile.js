@@ -15,6 +15,7 @@ var arrowProduct = document.getElementById("arrow-product");
 var arrowCompany = document.getElementById("arrow-company");
 var arrowConnect = document.getElementById("arrow-connect");
 
+
 menuIcon.addEventListener('click', function(){
     menuIcon.style.display = 'none';
     closeIcon.style.display = 'block';
