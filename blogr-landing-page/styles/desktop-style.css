@@ -62,6 +62,8 @@ html, body{
 */
 body{
     width: 1440px;
+    border: 1px solid red;
+    /*overflow-x: hidden;*/
 }
 
 header{
@@ -226,4 +228,117 @@ header > div#main-header > a#start:hover{
 header > div#main-header > a#more-info:hover{
     background-color: var(--white);
     color: var(--verylightred);
+}
+
+/* Estilização do conteúdo principal - início */
+
+main{
+    text-align: center;
+}
+
+main > section#design{
+    margin-top: 150px;
+    height: 850px;
+}
+
+main > section.text h2{
+    font-family: var(--overpass);
+    font-weight: 600;
+    font-size: 38px;
+    width: 100%;
+    margin-bottom: 100px;
+    color: var(--verydarkblue);
+}
+
+main > section.text h3{
+    font-family: var(--overpass);
+    font-weight: 600;
+    font-size: 28px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: var(--verydarkblue);
+}
+
+main > section.text > div.flex-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+main > section#design > div.flex-container > img{
+    content: url('../images/new-illustration-editor-desktop.png');
+    width: 785px;
+    height: 882px;
+    position: relative;
+    top: -243px;
+    left: 175px;
+}
+
+main > section.text > div.flex-container > div.about{
+    width: 50%;
+    text-align: left;
+    padding-left: 120px;
+}
+
+main > section.text > div.flex-container > div.about > p{
+    font-family: var(--overpass);
+    font-weight: 300;
+    font-size: 16px;
+    width: 95%;
+    margin-bottom: 50px;
+    line-height: 25px;
+    color: var(--verydarkgrayishblue);
+}
+
+main > section#infrastructure{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 398px;
+    background: url('../images/bg-pattern-circles.svg') -49% 87%/70% no-repeat, linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-radius: 0 80px;
+}
+
+main > section#infrastructure > img{
+    position: relative;
+    top: -50px;
+    left: 120px;
+    width: 473px;
+    height: 498px;
+}
+
+main > section#infrastructure > div#container-text{
+    font-family: var(--overpass);
+    text-align: left;
+    position: relative;
+    top: 50%;
+    left: 25%;
+    width: 50%;
+    padding: 115px 125px 0 0;
+    color: var(--white);
+    transform: translate(-50%, -50%);
+}
+
+main > section#infrastructure > div#container-text > h2{
+    font-weight: 600;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+main > section#infrastructure > div#container-text > p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+main > section#free-app{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px;
+}
+
+main > section#free-app > img{
+    content: url('../images/new-illustration-laptop-desktop.png');
+    width: 50%;
 }
