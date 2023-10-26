@@ -62,7 +62,6 @@ html, body{
 */
 body{
     width: 1440px;
-    border: 1px solid red;
     /*overflow-x: hidden;*/
 }
 
@@ -75,6 +74,7 @@ header{
 }
 
 header > img#logo{
+    float: left;
     margin-right: 50px;
 }
 
@@ -83,35 +83,50 @@ header > img#toggle-menu, header > img#close-menu{
 }
 
 header > menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     position: relative;
     top: -12px;
-    display: inline-block;
-    width: calc(100% - 155px);
+    width: calc(100% - 545px);
     font-family: var(--overpass);
     font-weight: 600;
     font-size: 16px;
     color: var(--white);
 }
 
-header > menu > div.section-menu{
+header > menu > div.menu-column{
+    position: relative;
+    top: 8px;
+    flex: 1;
+    z-index: 2;
+}
+
+header > menu > div.menu-column > div.section-menu{
     display: inline-block;
-    width: 10%;
-    margin-right: 20px;
     cursor: pointer;
 }
 
-header > menu > div.section-menu img{
+header > menu > div.menu-column > div.section-menu img{
     content: url('../images/icon-arrow-light.svg');
     position: relative;
     top: -1px;
     left: 3px;
 }
 
-header > menu > div.section-menu:hover{
+header > menu > div.menu-column > div.section-menu:hover{
     text-decoration: underline;
 }
 
 /* Arrumar as listas de cada item depois! */
+
+/*
+header > menu#menu > ul.list-menu{
+    width: 10%;
+    background-color: var(--white);
+}
+*/
 
 hr{
     display: none;
@@ -255,7 +270,7 @@ main > section.text h3{
     font-weight: 600;
     font-size: 28px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: var(--verydarkblue);
 }
 
@@ -335,10 +350,99 @@ main > section#infrastructure > div#container-text > p{
 main > section#free-app{
     display: flex;
     justify-content: space-between;
-    margin-top: 105px;
+    margin: 105px 0;
 }
 
 main > section#free-app > img{
     content: url('../images/new-illustration-laptop-desktop.png');
+    position: relative;
+    left: -190px;
     width: 50%;
+}
+
+main > section#free-app > div.about{
+    text-align: left;
+    padding-top: 155px;
+}
+
+main > section#free-app > div.about > p{
+    font-family: var(--overpass);
+    font-weight: 300;
+    font-size: 16px;
+    width: 70%;
+    margin-bottom: 50px;
+    line-height: 25px;
+    color: var(--verydarkgrayishblue);
+}
+
+/* Footer style */
+
+footer{
+    text-align: center;
+    background-color: var(--verydarkblackblue);
+    color: var(--grayishblue);
+    border-top-right-radius: 80px;
+    padding-top: 80px;
+    padding-bottom: 5px;
+}
+
+footer > img{
+    width: 8%;
+    float: left;
+    margin-left: 130px;
+    margin-right: 200px;
+}
+
+footer > menu#menu-footer{
+    display: flex;
+    justify-content: center;
+    width: 57%;
+    margin-bottom: 80px;
+}
+
+footer > menu#menu-footer > div.footer-column{
+    flex: 1;
+}
+
+footer > menu#menu-footer > div.footer-column > div.list-footer{
+    font-family: var(--overpass);
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 40px;
+    color: var(--white);
+}
+
+footer > menu#menu-footer ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+footer > menu#menu-footer ul li{
+    margin-bottom: 15px;
+}
+
+footer > menu#menu-footer ul li a{
+    font-family: var(--overpass);
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--grayishblue);
+}
+
+footer > menu#menu-footer ul li a:hover{
+    text-decoration: underline;
+}
+
+footer > div.attribution{
+    font-size: 11px;
+}
+
+footer > div.attribution > a{
+    color: hsl(356, 100%, 66%);
+    transition: color .3s;
+}
+
+footer > div.attribution > a:hover{
+   color: hsl(355, 100%, 74%);
 }

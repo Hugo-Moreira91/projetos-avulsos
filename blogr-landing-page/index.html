@@ -15,36 +15,42 @@
     <img id="close-menu" src="images/icon-close.svg" alt="Close icon">
 
     <menu id="menu">
-      <div id="product-list" class="section-menu" data-toggle-state="down">
-        Product
-        <img id="arrow-product" src="images/icon-arrow-dark.svg" alt="Arrow down">
+      <div class="menu-column">
+        <div id="product-list" class="section-menu" data-toggle-state="down">
+          Product
+          <img id="arrow-product" src="images/icon-arrow-dark.svg" alt="Arrow down">
+        </div>
+        <ul style="display: none;" id="product-itens" class="list-menu">   <!-- alterar ao final para display: none -->
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
       </div>
-      <ul style="display: none;" id="product-itens" class="list-menu">   <!-- alterar ao final para display: none -->
-        <li><a href="#">Overview</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Marketplace</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Integrations</a></li>
-      </ul>
-      <div id="company-list" class="section-menu" data-toggle-state="down">
-        Company
-        <img id="arrow-company" src="images/icon-arrow-dark.svg" alt="Arrow down">
+      <div class="menu-column">
+        <div id="company-list" class="section-menu" data-toggle-state="down">
+          Company
+          <img id="arrow-company" src="images/icon-arrow-dark.svg" alt="Arrow down">
+        </div>
+        <ul style="display: none;" id="company-itens" class="list-menu">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
       </div>
-      <ul style="display: none;" id="company-itens" class="list-menu">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Careers</a></li>
-      </ul>
-      <div id="connect-list" class="section-menu" data-toggle-state="down">
-        Connect
-        <img id="arrow-connect" src="images/icon-arrow-dark.svg" alt="Arrow down">
+      <div class="menu-column">
+        <div id="connect-list" class="section-menu" data-toggle-state="down">
+          Connect
+          <img id="arrow-connect" src="images/icon-arrow-dark.svg" alt="Arrow down">
+        </div>
+        <ul style="display: none;" id="connect-itens" class="list-menu">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
       </div>
-      <ul style="display: none;" id="connect-itens" class="list-menu">
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Newsletter</a></li>
-        <li><a href="#">LinkedIn</a></li>
-      </ul>
 
       <hr>
       
@@ -113,27 +119,33 @@
   <footer>
     <img id="logo" src="images/logo.svg" alt="Logo of the page">
     <menu id="menu-footer">
-      <div class="list-footer">Product</div>
-      <ul>
-        <li><a href="#">Overview</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Marketplace</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Integrations</a></li>
-      </ul>
-      <div class="list-footer">Company</div>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Careers</a></li>
-      </ul>
-      <div class="list-footer">Connect</div>
-      <ul>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Newsletter</a></li>
-        <li><a href="#">LinkedIn</a></li>
-      </ul>
+      <div class="footer-column">
+        <div class="list-footer">Product</div>
+        <ul>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <div class="list-footer">Company</div>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <div class="list-footer">Connect</div>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
     </menu>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="external">Frontend Mentor</a>.
