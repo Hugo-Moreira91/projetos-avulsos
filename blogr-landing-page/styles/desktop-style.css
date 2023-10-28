@@ -84,10 +84,10 @@ header > img#toggle-menu, header > img#close-menu{
 
 header > menu{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-
     position: relative;
+    width: 100%;
     top: -12px;
     width: calc(100% - 545px);
     font-family: var(--overpass);
@@ -133,8 +133,9 @@ hr{
 }
 
 header > menu > div#connection-account{
-    display: inline;
-    float: right;
+    position: relative;
+    top: 25px;
+    text-align: right;
     width: 210px;
 }
 
