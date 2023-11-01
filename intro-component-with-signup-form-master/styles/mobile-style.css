@@ -60,8 +60,6 @@ body{
     width: 375px;
     background: var(--red) url('../images/bg-intro-mobile.png') top center/cover;
     background-repeat: repeat-y;
-    background-attachment: scroll;
-    border: 1px solid blue;
 }
 
 main{
@@ -152,9 +150,8 @@ main > div#form > form > input[type='submit']:hover{
     background-color: hsl(154, 65%, 68%);
 }
 
-main > div#form > form > span.text-error{
+main > div#form > form > div.field-form > span.text-error{
     display: none;
-    /*display: block;*/
     text-align: right;
     font-family: var(--poppinssemibold);
     font-style: italic;
@@ -162,6 +159,17 @@ main > div#form > form > span.text-error{
     margin-top: -10px;
     margin-bottom: 15px;
     color: var(--red);
+}
+
+main > div#form > form > div.field-form{
+    position: relative;
+}
+
+main > div#form > form > div.field-form > img{
+    display: none;
+    position: absolute;
+    top: 16.5px;
+    right: 15px;
 }
 
 main > div#form > form > p.terms{

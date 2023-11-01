@@ -26,14 +26,26 @@
     <div id="form">
       <p class="free-test"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
       <form id="form" action="#" method="post" autocomplete="on">
-        <input type="text" name="fname" id="ifname" placeholder="First Name">
-        <span id="fname-error" class="text-error">First Name cannot be empty</span>
-        <input type="text" name="lname" id="ilname" placeholder="Last Name">
-        <span id="lname-error" class="text-error">Last Name cannot be empty</span>
-        <input type="email" name="email" id="iemail" placeholder="Email Address">
-        <span id="email-error" class="text-error">Looks like this is not an email</span>
-        <input type="password" name="password" id="ipassword" placeholder="Password">
-        <span id="password-error" class="text-error">Password cannot be empty</span>
+        <div class="field-form">
+          <input type="text" name="fname" id="ifname" placeholder="First Name">
+          <span id="fname-error" class="text-error"></span>
+          <img id="icon-fname-error" src="images/icon-error.svg" alt="Icon error">
+        </div>
+        <div class="field-form">
+          <input type="text" name="lname" id="ilname" placeholder="Last Name">
+          <span id="lname-error" class="text-error"></span>
+          <img id="icon-lname-error" src="images/icon-error.svg" alt="Icon error">
+        </div>
+        <div class="field-form">
+          <input type="email" name="email" id="iemail" placeholder="Email Address">
+          <span id="email-error" class="text-error"></span>
+          <img id="icon-email-error" src="images/icon-error.svg" alt="Icon error">
+        </div>
+        <div class="field-form">
+          <input type="password" name="password" id="ipassword" placeholder="Password">
+          <span id="password-error" class="text-error"></span>
+          <img id="icon-password-error" src="images/icon-error.svg" alt="Icon error">
+        </div>
         <input type="submit" value="CLAIM YOUR FREE TRIAL">
         <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </form>
