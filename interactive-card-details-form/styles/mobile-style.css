@@ -14,11 +14,10 @@
 }
 
 html, body{
-    height: 100vh;
+    width: 100%;
 }
 
 body{
-    width: 375px;
     background-color: hsl(0, 0%, 100%);
 }
 
@@ -86,7 +85,7 @@ main > section#img-top > div#front-card > div#content-card > p{
 
 main > section#img-top > div#front-card > div#content-card > p span{
     display: inline-block;
-    margin-right: 4px;
+    margin-right: 2px;
     width: 20%;
 }
 
