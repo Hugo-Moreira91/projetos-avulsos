@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
-  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (width: 375px)">
+  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (min-width: 375px)">
   <title>Frontend Mentor | FAQ Accordion Card</title>
 </head>
 <body>
@@ -15,39 +15,39 @@
     </div>
     <div class="container">
       <h1>FAQ</h1>
-      <p id="q1" class="question">
+      <p id="q1" class="question" onclick="toggleAnswer(1)">
         How many team members can I invite?
-        <img src="images/icon-arrow-down.svg" alt="Arrow down">
+        <img id="arrow1" src="images/icon-arrow-down.svg" alt="Arrow down">
       </p>
       <p id="a1" class="answer">
         You can invite up to 2 additional users on the Free plan. There is no limit on
         team members for the Premium plan.
       </p>
       <hr>
-      <p id="q2" class="question">
+      <p id="q2" class="question" onclick="toggleAnswer(2)">
         What is the maximum file upload size?
-        <img src="images/icon-arrow-down.svg" alt="Arrow down">
+        <img id="arrow2" src="images/icon-arrow-down.svg" alt="Arrow down">
       </p>
       <p id="a2" class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
       <hr>
-      <p id="q3" class="question">
+      <p id="q3" class="question" onclick="toggleAnswer(3)">
         How do I reset my password?
-        <img src="images/icon-arrow-down.svg" alt="Arrow down">
+        <img id="arrow3" src="images/icon-arrow-down.svg" alt="Arrow down">
       </p>
       <p id="a3" class="answer">
         Click “Forgot password” from the login page or “Change password” from your profile page.
         A reset link will be emailed to you.
       </p>
       <hr>
-      <p id="q4" class="question">
+      <p id="q4" class="question" onclick="toggleAnswer(4)">
         Can I cancel my subscription?
-        <img src="images/icon-arrow-down.svg" alt="Arrow down">
+        <img id="arrow4" src="images/icon-arrow-down.svg" alt="Arrow down">
       </p>
       <p id="a4" class="answer">Yes! Send us a message and we'll process your request no questions asked.</p>
       <hr>
-      <p id="q5" class="question">
+      <p id="q5" class="question" onclick="toggleAnswer(5)">
         Do you provide additional support?
-        <img src="images/icon-arrow-down.svg" alt="Arrow down">
+        <img id="arrow5" src="images/icon-arrow-down.svg" alt="Arrow down">
       </p>
       <p id="a5" class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
       <hr>
@@ -60,5 +60,7 @@
       Coded by <a href="https://github.com/Hugo-Moreira91" target="_blank" rel="external">Hugo Moreira</a>.
     </div>
   </footer>
+
+  <script src="functions/toggle-answers.js"></script>
 </body>
 </html>
