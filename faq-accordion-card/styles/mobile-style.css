@@ -97,6 +97,11 @@ main > div.container p.question:hover{
     color: var(--softred);
 }
 
+main > div.container p.question.visible-answer {
+    color: var(--verydarkdesaturatedblue);
+    font-weight: 700;
+}
+
 main > div.container p.answer{
     display: none;
     color: var(--darkgrayishblue);

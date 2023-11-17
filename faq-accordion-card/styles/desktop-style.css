@@ -1,0 +1,81 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url('../fonts/KumbhSans-VariableFont_YOPQ_wght.ttf') format('truetype'); 
+}
+
+:root{
+    /* Primary colors */
+    /* Text */
+    --verydarkdesaturatedblue: hsl(238, 29%, 16%);
+    --softred: hsl(14, 88%, 65%);
+
+    /* Gradient */
+    --softviolet: hsl(273, 75%, 66%);
+    --softblue: hsl(240, 73%, 65%);
+
+    /* Neutral colors */
+    /* Text */
+    --verydarkgrayishblue: hsl(237, 12%, 33%);
+    --darkgrayishblue: hsl(240, 6%, 50%);
+
+    /* Dividers */
+    --lightgrayishblue: hsl(240, 5%, 91%);
+
+    /* Font */
+    --kumbh: 'Kumbh Sans';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--kumbh);
+}
+
+html, body{
+    width: 100%;
+}
+
+body{
+    width: 1440px;
+    height: 900px;
+    background-image: linear-gradient(to bottom, var(--softviolet), var(--softblue));
+    border: 1px solid red;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    margin: 150px auto 50px;
+    padding: 50px 25px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+main > div.img-container{
+    width: 50%;
+    height: 410px;
+}
+
+main > div.img-container > img.img-woman{
+    z-index: 1;
+    position: relative;
+    right: 100px;
+}
+
+main > div.img-container > img.img-bg{
+    content: url('../images/bg-pattern-desktop.svg');
+    width: 200%;
+    z-index: 2;
+    position: relative;
+    bottom: 670px;
+    right: 535px;
+}
+
+main > div.container{
+    width: 50%;
+}

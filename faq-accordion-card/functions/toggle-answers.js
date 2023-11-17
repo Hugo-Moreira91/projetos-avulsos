@@ -7,18 +7,15 @@ function toggleAnswer(questionNumber){
     var questionElement = document.getElementById(questionId);
     var currentDisplay = answerElement.style.display;
 
+    var currentDisplay = window.getComputedStyle(answerElement).display;
+
     answerElement.style.display = (currentDisplay === 'none') ? 'block' : 'none';
 
     if(answerElement.style.display === 'none'){
         arrowElement.src = 'images/icon-arrow-down.svg';
-        questionElement.style.color = 'hsl(237, 12%, 33%)';
-        questionElement.style.fontWeight = '400';
-    }
-
-    if(answerElement.style.display === 'block'){
+        questionElement.classList.remove('visible-answer');
+    }else{
         arrowElement.src = 'images/icon-arrow-up.svg';
-        questionElement.style.color = 'hsl(238, 29%, 16%)';
-        questionElement.style.fontWeight = '700';
+        questionElement.classList.add('visible-answer');
     }
-
 }
