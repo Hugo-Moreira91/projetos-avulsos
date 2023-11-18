@@ -51,31 +51,113 @@ main{
     align-items: center;
     width: 65%;
     margin: 150px auto 50px;
-    padding: 50px 25px;
+    padding: 80px 25px;
     background-color: white;
     border-radius: 20px;
 }
 
 main > div.img-container{
     width: 50%;
-    height: 410px;
+    height: 100%;
 }
 
 main > div.img-container > img.img-woman{
-    z-index: 1;
+    z-index: 2;
     position: relative;
     right: 100px;
 }
 
 main > div.img-container > img.img-bg{
+    display: none;
     content: url('../images/bg-pattern-desktop.svg');
-    width: 200%;
-    z-index: 2;
+    width: 100%;
+    z-index: 1;
     position: relative;
+    top: -70px;
+    /*
     bottom: 670px;
     right: 535px;
+    */
 }
 
 main > div.container{
     width: 50%;
+    height: 100%;
+}
+
+main > div.container p{
+    width: 77%;
+}
+
+main > div.container hr{
+    width: 82%;
+}
+
+main > div.container > h1{
+    text-align: left;
+    font-size: 34px;
+    margin-bottom: 40px;
+    color: var(--verydarkdesaturatedblue);
+}
+
+main > div.container p.question{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+main > div.container p.answer{
+    font-size: 12px;
+    font-weight: 400;
+    width: 75%;
+    margin-bottom: 15px;
+}
+
+main > div.container p.question{
+    cursor: pointer;
+    color: var(--verydarkgrayishblue);
+    transition: color .3s;
+}
+
+main > div.container p.question:hover{
+    color: var(--softred);
+}
+
+main > div.container p.question.visible-answer {
+    color: var(--verydarkdesaturatedblue);
+    font-weight: 700;
+}
+
+main > div.container p.answer{
+    display: none;
+    color: var(--darkgrayishblue);
+}
+
+main > div.container p.question > img{
+    float: right;
+    position: relative;
+    top: 5.5px;
+}
+
+main > div.container hr{
+    margin-bottom: 15px;
+    border: none;
+    border-top: 1px solid var(--lightgrayishblue);
+}
+
+main > div.container hr:nth-last-child(1){
+    margin-bottom: 0;
+}
+
+footer{
+    padding: 5px;
+}
+
+footer > div.attribution{
+    font-size: 11px; 
+    text-align: center;
+}
+
+footer > div.attribution > a{
+    color: var(--softred);
 }
