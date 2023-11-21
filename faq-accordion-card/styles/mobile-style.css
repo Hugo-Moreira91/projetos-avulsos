@@ -133,5 +133,10 @@ footer > div.attribution{
 }
 
 footer > div.attribution > a{
+    color: var(--lightgrayishblue);
+    transition: color .3s;
+}
+
+footer > div.attribution > a:hover{
     color: var(--softred);
 }

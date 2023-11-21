@@ -36,13 +36,11 @@
 
 html, body{
     width: 100%;
+    height: 100vh;
 }
 
 body{
-    width: 1440px;
-    height: 900px;
     background-image: linear-gradient(to bottom, var(--softviolet), var(--softblue));
-    border: 1px solid red;
 }
 
 main{
@@ -58,7 +56,7 @@ main{
 
 main > div.img-container{
     width: 50%;
-    height: 100%;
+    height: 340px;
 }
 
 main > div.img-container > img.img-woman{
@@ -68,16 +66,13 @@ main > div.img-container > img.img-woman{
 }
 
 main > div.img-container > img.img-bg{
-    display: none;
+   
     content: url('../images/bg-pattern-desktop.svg');
     width: 100%;
     z-index: 1;
     position: relative;
-    top: -70px;
-    /*
-    bottom: 670px;
-    right: 535px;
-    */
+    top: -375px;
+    right: 105px;
 }
 
 main > div.container{
@@ -154,10 +149,15 @@ footer{
 }
 
 footer > div.attribution{
-    font-size: 11px; 
+    font-size: 12px; 
     text-align: center;
 }
 
 footer > div.attribution > a{
+    color: var(--lightgrayishblue);
+    transition: color .3s;
+}
+
+footer > div.attribution > a:hover{
     color: var(--softred);
 }
