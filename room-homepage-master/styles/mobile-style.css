@@ -1,0 +1,147 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../fonts/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+}
+
+:root{
+    /* Font Family */
+    --leagueSpartan: 'League Spartan';
+
+    /* Font size: 500, 600 and 700 */
+
+    /* Primary colors */
+    --darkGray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --veryDarkGray: hsl(0, 0%, 27%);
+
+    /* Body copy - font size: 12px */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--leagueSpartan);
+}
+/*
+html, body{
+    width: 100%;
+    height: 100%;
+}
+*/
+body{
+    width: 375px;
+    border: 1px solid red;
+}
+
+body.menu-opened{
+    overflow: hidden;
+}
+
+body.menu-opened::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, .5);
+    z-index: 2;
+}
+
+.square1{
+    position: relative;
+    height: 360px;
+    padding-top: 45px;
+    padding-left: 25px;
+    background-color: var(--veryDarkGray);
+    background-image: url('../images/mobile-image-hero-1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#icon-burguer{
+    display: inline-block;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Estilizar o menu hamburguer aberto depois! */
+
+#menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 45px 25px;
+    z-index: 3;
+    background-color: var(--white);
+}
+
+#menu > #close-menu{
+    display: inline-block;
+    cursor: pointer;
+}
+
+#menu > ul{
+    display: inline;
+    float: right;
+    position: relative;
+    top: 2.5px;
+    list-style-type: none;
+}
+
+#menu > ul li{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+#menu > ul li a{
+    font-weight: 700;
+    color: var(--black);
+    text-decoration: none;
+    padding-bottom: 8px;
+}
+
+#menu > ul li a:hover{
+    border-bottom: 2px solid var(--black);
+}
+
+#logo{
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    left: calc(50% - 45px);
+    transform: translateX(-50%);
+}
+
+#toggle-img{
+    font-size: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#toggle-img > .button-img{
+    display: inline-block;
+    padding: 20px 22px;
+    background-color: var(--black);
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+#toggle-img > #previous-img:hover{
+    background-color: var(--veryDarkGray);
+}
+
+#toggle-img > #next-img:hover{
+    background-color: var(--veryDarkGray);
+}
+
+#toggle-img > .button-img > img{
+    height: 20px;
+}
