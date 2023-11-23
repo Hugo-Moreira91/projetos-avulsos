@@ -4,14 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (min-width: 375px)">  
+  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (width: 375px)">  
   <title>Frontend Mentor | Room homepage</title>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  -->
 </head>
 <body>
   <div class="main-container"> <!-- nessa div será aplicado o display: grid (e não mais no body, para não afetar o footer) -->
@@ -44,7 +38,7 @@
         </div>
       </div>
 
-      <div id="square2">
+      <div id="square2-txt" class="square2">
         <div id="text1" class="about-us">
           <h1>Discover innovative ways to decorate</h1>
           <p>
@@ -52,10 +46,6 @@
             Our experts combine form and function in bringing your vision to life. Create a room in your
             own style with our collection and make your property a reflection of you and what you love.
           </p>
-          <a href="#">
-            SHOP NOW
-            <img src="images/icon-arrow.svg" alt="Arrow icon">
-          </a>
         </div>
 
         <div id="text2" class="about-us" style="display: none;">
@@ -65,10 +55,6 @@
             Locally, we're in most major cities throughout the country. Find the branch nearest you using our
             store locator. Any questions? Don't hesitate to contact us today.
           </p>
-          <a href="#">
-            SHOP NOW
-            <img src="images/icon-arrow.svg" alt="Arrow icon">
-          </a>
         </div>
 
         <div id="text3" class="about-us" style="display: none;">
@@ -78,20 +64,22 @@
             to ensure that every product is made as perfect and as consistent as possible. With three decades of
             experience in this industry, we understand what customers want for their home and office.
           </p>
-          <a href="#">
-            SHOP NOW
-            <img src="images/icon-arrow.svg" alt="Arrow icon">
-          </a>
         </div>
+
+        <a id="hover-link" href="#">
+          SHOP NOW
+          <img id="arrow-link" src="images/icon-arrow.svg" alt="Arrow icon">
+        </a>
+
       </div>
     </div>
 
     <div class="container2">
-      <div id="square3">
+      <div class="square3">
         <img src="images/image-about-dark.jpg" alt="Dark objects">
       </div>
-      <div id="square4">
-        <h2>About our furniture</h2>
+      <div class="square4">
+        <h2>ABOUT OUR FURNITURE</h2>
         <p>
           Our multifunctional collection blends design and function to suit your individual taste.
           Make each room unique, or pick a cohesive theme that best express your interests and what
@@ -99,7 +87,7 @@
           or anything in between. Product specialists are available to help you create your dream space.
         </p>
       </div>
-      <div id="square5">
+      <div class="square5">
         <img src="images/image-about-light.jpg" alt="Light objects">
       </div>
     </div>

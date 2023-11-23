@@ -16,8 +16,6 @@
     --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
     --veryDarkGray: hsl(0, 0%, 27%);
-
-    /* Body copy - font size: 12px */
 }
 
 *{
@@ -26,15 +24,9 @@
     box-sizing: border-box;
     font-family: var(--leagueSpartan);
 }
-/*
+
 html, body{
     width: 100%;
-    height: 100%;
-}
-*/
-body{
-    width: 375px;
-    border: 1px solid red;
 }
 
 body.menu-opened{
@@ -144,4 +136,88 @@ body.menu-opened::after{
 
 #toggle-img > .button-img > img{
     height: 20px;
+}
+
+.square2{
+    text-align: left;
+    padding: 50px 27px 70px;
+}
+
+.square2 > .about-us h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.square2 > .about-us p{
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 45px;
+    color: var(--darkGray);
+}
+
+.square2 a{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 12px;
+    text-decoration: none;
+    color: var(--black);
+    transition: color .1s;
+}
+
+.square2 a:hover{
+    color: var(--darkGray);
+}
+
+.square2 a img{
+    vertical-align: middle; 
+    transition: fill .4s;
+}
+
+.square2 a:hover img{
+    fill: var(--darkGray);
+}
+
+.square3 img{
+    width: 100%;
+}
+
+.square4{
+    text-align: left;
+    padding: 50px 27px;
+}
+
+.square4 h2{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.square4 p{
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--darkGray);
+}
+
+.square5 img{
+    width: 100%;
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 15px;
+    padding: 8px;
+    color: var(--darkGray);
+    background-color: var(--black);
+}
+
+.attribution a{ 
+    text-decoration: none;
+    color: var(--white); 
+}
+
+.attribution a:hover{
+    text-decoration: underline;
 }
