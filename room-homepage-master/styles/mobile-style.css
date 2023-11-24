@@ -62,9 +62,8 @@ body.menu-opened::after{
     cursor: pointer;
 }
 
-/* Estilizar o menu hamburguer aberto depois! */
-
 #menu{
+    display: none;
     position: absolute;
     top: 0;
     left: 0;

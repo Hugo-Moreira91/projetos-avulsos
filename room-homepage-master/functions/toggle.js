@@ -73,6 +73,47 @@ function mobileDevice(){
 
 }
 
+function desktopDevice(){
+
+    previousImg.addEventListener("click", () =>{
+        if(window.getComputedStyle(bgImg).backgroundImage.includes("desktop-image-hero-1.jpg")){
+            bgImg.style.backgroundImage = "url('images/desktop-image-hero-3.jpg')";
+            firstTxt.style.display = "none";
+            secondTxt.style.display = "none";
+            thirdTxt.style.display = "block";
+        }else if(window.getComputedStyle(bgImg).backgroundImage.includes("desktop-image-hero-2.jpg")){
+            bgImg.style.backgroundImage = "url('images/desktop-image-hero-1.jpg')";
+            firstTxt.style.display = "block";
+            secondTxt.style.display = "none";
+            thirdTxt.style.display = "none";
+        }else{
+            bgImg.style.backgroundImage = "url('images/desktop-image-hero-2.jpg')";
+            firstTxt.style.display = "none";
+            secondTxt.style.display = "block";
+            thirdTxt.style.display = "none";
+        }
+    });
+
+    nextImg.addEventListener("click", () =>{
+        if(window.getComputedStyle(bgImg).backgroundImage.includes("desktop-image-hero-1.jpg")){
+            bgImg.style.backgroundImage = "url('images/desktop-image-hero-2.jpg')";
+            firstTxt.style.display = "none";
+            secondTxt.style.display = "block";
+            thirdTxt.style.display = "none";
+        }else if(window.getComputedStyle(bgImg).backgroundImage.includes("desktop-image-hero-2.jpg")){
+            bgImg.style.backgroundImage = "url('images/desktop-image-hero-3.jpg')";
+            firstTxt.style.display = "none";
+            secondTxt.style.display = "none";
+            thirdTxt.style.display = "block";
+        }else{
+            bgImg.style.backgroundImage = "url('images/desktop-image-hero-1.jpg')";
+            firstTxt.style.display = "block";
+            secondTxt.style.display = "none";
+            thirdTxt.style.display = "none";
+        }
+    });
+}
+
 
 function windowSize(){
     const viewportWidth = window.innerWidth;
