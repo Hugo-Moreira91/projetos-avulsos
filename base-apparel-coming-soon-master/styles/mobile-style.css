@@ -1,0 +1,84 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
+}
+
+:root{
+    /* Font */
+    /* weights: 300, 400, 600 */
+    --josefinSans: 'Josefin Sans';
+
+    /* Primary colors */
+    --desaturatedRed: hsl(0, 36%, 70%);
+    --softRed: hsl(0, 93%, 68%);
+
+    /* Neutral colors */
+    --darkGrayishRed: hsl(0, 6%, 24%);
+
+    /* Gradients */
+    /*
+
+    - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+    - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+
+    */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--josefinSans);
+}
+/*
+html, body{
+    width: 100%;
+    height: 100%;
+}
+*/
+body{
+    width: 375px;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    border: 1px solid red;
+}
+
+.logo{
+    padding: 35px;
+}
+
+.logo > img{
+    width: 33%;
+}
+
+.img-woman{
+    width: 100%;
+}
+
+.txt-form{
+    margin: 70px auto;
+    text-align: center;
+    width: 85%;
+}
+
+.txt-form > h1{
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    color: var(--darkGrayishRed);
+}
+
+.txt-form > h1 > span{
+    display: inline-block;
+    width: 100%;
+    font-weight: 300;
+    color: var(--desaturatedRed);
+}
+
+.txt-form > p{
+    font-size: 15px;
+    margin: 25px 0;
+    line-height: 22px;
+    color: var(--desaturatedRed);
+}
