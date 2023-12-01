@@ -46,7 +46,7 @@ main{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 56% 44%;
     grid-template-rows: 15% 85%;
 }
 
@@ -96,7 +96,8 @@ main{
 
 .txt-form > p{
     font-size: 17px;
-    margin: 40px 0;
+    margin: 30px 0;
+    width: 95%;
     line-height: 28px;
     color: var(--desaturatedRed);
 }
