@@ -42,15 +42,14 @@ body{
 
 main{
     flex: 1 0 auto;
-    width: 67%;
+    width: 66%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    margin: 180px 0; /* ajustar depois */
+    margin: 180px 0;
 }
 
 .cars{
-    position: relative;
     text-align: left;
     padding: 15%;
 }
@@ -87,13 +86,12 @@ main{
 }
 
 .cars a button{
-    position: absolute;
-    bottom: 48px;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     cursor: pointer;
     border: none;
     border-radius: 30px;
+    margin-top: 90px;
     padding: 15px 33px;
     border: 2px solid var(--veryLightGray);
 }
