@@ -58,7 +58,7 @@ body{
 main{
     width: 25%;
     padding: 22px;
-    margin-bottom: 140px;
+    margin-bottom: 50px;
     border: 1px solid var(--black);
     border-radius: 20px;
     box-shadow: 8px 8px 1px var(--black);
