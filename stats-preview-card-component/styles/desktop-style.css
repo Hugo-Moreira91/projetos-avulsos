@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+
+/* font-family: 'Lexend Deca', sans-serif; */
+/* font-weight: 400; */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap'); 
+
+/* font-family: 'Inter', sans-serif; */
+/* font-weights: 400 and 700 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    /* Primary colors */
+    --veryDarkBlue: hsl(233, 47%, 7%); /* (main background) */
+    --darkDesaturatedBlue: hsl(244, 38%, 16%); /* (card background) */
+    --softViolet: hsl(277, 64%, 61%); /* (accent) */
+
+    /* Neutral colors */
+    --white: hsl(0, 0%, 100%); /* (main heading, stats) */
+    --slightlyTransparentWhite1: hsla(0, 0%, 100%, 0.75); /* (main paragraph) */
+    --slightlyTransparentWhite2: hsla(0, 0%, 100%, 0.6); /* (stat headings) */
+
+    /* Body Copy -> Font-size: 15px */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
