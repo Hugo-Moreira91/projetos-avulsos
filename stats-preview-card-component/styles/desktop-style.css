@@ -22,8 +22,28 @@
     /* Body Copy -> Font-size: 15px */
 }
 
-*{
+body{
+    width: 1440px;
+    height: 900px;
+}
+
+.main-container{
+    width: 75%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "col1 col2";
+}
+
+.img-container{
+    grid-area: col2;
+}
+
+.txt-container{
+    grid-area: col1;
 }
