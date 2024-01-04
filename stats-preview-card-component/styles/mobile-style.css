@@ -59,7 +59,7 @@ main{
     position: relative;
     width: 100%;
     height: 245px;
-    background: transparent url('../images/image-header-mobile.jpg') center center/cover no-repeat;
+    background: var(--darkDesaturatedBlue) url('../images/image-header-mobile.jpg') center center/cover no-repeat;
 }
 
 .img-container::after{
@@ -69,7 +69,7 @@ main{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: hsla(277, 64%, 61%, .35);
+    background-color: hsla(277, 71%, 29%, 0.65);
 }
 
 .txt-container{
