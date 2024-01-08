@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <link rel="stylesheet" href="styles/mobile-style.css" media="screen and (min-width: 375px)">
   <title>Frontend Mentor | Clipboard landing page</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍
   <style>
@@ -105,13 +106,22 @@
   </main>
 
   <footer>
-    <div class="footer-container">
-      <img src="images/logo.svg" alt="Website's logo">
-      <a href="#">FAQs</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Press Kit</a>
-      <a href="#">Install Guide</a>
+    <div class="footer-container"> <!-- display grid com 6 colunas e linha 100% (versão desktop) -->
+      <div class="grid1"> <!-- display grid com 1 coluna e linha 100% -->
+        <img src="images/logo.svg" alt="Website's logo">
+      </div>
+      <div class="grid2"> <!-- display grid com 4 colunas e 2 linhas -->
+        <a href="#">FAQs</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Press Kit</a>
+        <a href="#">Install Guide</a>
+      </div>
+      <div class="grid3"> <!-- display grid com 1 coluna e linha 100% -->
+        <a href="#" target="_blank" rel="external"><img src="images/icon-facebook2.svg" alt="Facebook's icon"></a>
+        <a href="#" target="_blank" rel="external"><img src="images/icon-x.svg" alt="Twitter's icon"></a>
+        <a href="#" target="_blank" rel="external"><img src="images/icon-instagram.svg" alt="Instagram's icon"></a>
+      </div>
     </div>
   
     <p class="attribution">
