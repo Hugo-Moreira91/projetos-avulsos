@@ -4,4 +4,20 @@ body{
 
 header{
     padding: 0 25%;
+    background: transparent url('../images/bg-header-desktop.png') center top/95% no-repeat;
+}
+
+header img{
+    width: 18%;
+    margin: 130px 0 50px;
+}
+
+header h1{
+    font-size: 45px;
+}
+
+header p{
+    font-size: 18px;
+    padding: 0;
+    letter-spacing: 1px;
 }
