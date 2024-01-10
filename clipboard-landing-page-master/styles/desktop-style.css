@@ -9,7 +9,7 @@ header{
 
 header img{
     width: 18%;
-    margin: 130px 0 50px;
+    margin: 130px 0 55px;
 }
 
 header h1{
@@ -19,5 +19,43 @@ header h1{
 header p{
     font-size: 18px;
     padding: 0;
+    margin: 18px 0 28px;
+    line-height: 28px;
     letter-spacing: 1px;
+}
+
+.download-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.ios, .mac{
+    display: inline;
+    width: 46%;
+    margin: auto;
+}
+
+.snippet-container{
+    margin: 7px 0;
+}
+
+.snippet-container h2{
+    font-size: 36px;
+}
+
+.snippet-container p{
+    font-size: 18px;
+    padding: 0 22%;
+    margin: 18px 0 28px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.functionalities-container{
+    display: flex;
+    width: 110%;
+    margin: 48px 0;
 }
