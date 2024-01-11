@@ -59,3 +59,43 @@ header p{
     width: 110%;
     margin: 48px 0;
 }
+
+.examples-functionalities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-examples{
+    width: 85%;
+    text-align: left;
+    margin: 26px 0 26px 100px;
+}
+
+.box-examples h3{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.box-examples p{
+    font-size: 18px;
+    width: 60%;
+    line-height: 30px;
+}
+
+.anywhere-container{
+    margin: 92px 0;
+}
+
+.anywhere-container h2{
+    font-size: 34px;
+}
+
+.anywhere-container p{
+    font-size: 18px;
+    width: 80%;
+    line-height: 28px;
+    margin: 20px auto 75px;
+}
