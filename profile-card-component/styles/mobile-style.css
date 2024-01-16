@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'KumbhSans';
+    src: url('../fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf') format('truetype');
+}
+
+:root{
+    /* Primary colors */
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+
+    /* Neutral colors*/
+    --darkGray: hsl(0, 0%, 59%);
+
+    /* Body Copy -> Font-size (name and stats): 18px */
+    /* Font Weights: 400 and 700 */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+*/
+html{
+    background-color: white;
+}
+
+body{
+    width: 375px;
+    height: 667px;
+    border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkCyan);
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+    background-image: url('../images/bg-pattern-bottom.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
