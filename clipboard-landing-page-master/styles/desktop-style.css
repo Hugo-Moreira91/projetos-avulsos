@@ -86,11 +86,11 @@ header p{
 }
 
 .anywhere-container{
-    margin: 92px 0;
+    margin: 130px 0;
 }
 
 .anywhere-container h2{
-    font-size: 34px;
+    font-size: 36px;
 }
 
 .anywhere-container p{
@@ -98,4 +98,123 @@ header p{
     width: 80%;
     line-height: 28px;
     margin: 20px auto 75px;
+}
+
+.anywhere-container img{
+    width: 85%;
+    margin: 40px 0 28px;
+}
+
+.workflow-container h2{
+    font-size: 36px;
+}
+
+.workflow-container > p{
+    font-size: 18px;
+    margin: 23px 0;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    width: 83%;
+    margin: 22px auto;
+}
+
+.box h3{
+    font-size: 24px;
+}
+
+.box:nth-last-child(3) h3{
+    margin: 27px 0 20px;
+}
+
+.box p{
+    font-size: 16px;
+    width: 92%;
+    margin: auto;
+}
+
+.partners{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100%;
+    width: 83%;
+    margin: 92px 0;
+}
+
+.hp{
+    width: 75%;
+}
+
+.clipboard-container{
+    margin-top: 65px;
+}
+
+.clipboard-container h2{
+    font-size: 36px;
+}
+
+.clipboard-container p{
+    font-size: 18px;
+    width: 65%;
+    margin: 24px auto 55px;     
+}
+
+.clipboard-container .download-container{
+    width: 46%;
+    margin: auto;
+}
+
+footer{
+    width: 100%;
+}
+
+.footer-container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "link1 link3 link5"
+                         "link2 link4 link6";
+}
+
+.grid2 a:nth-last-child(1){
+    grid-area: link5;
+}
+
+.grid2 a:nth-last-child(2){
+    grid-area: link4;
+}
+
+.grid2 a:nth-last-child(3){
+    grid-area: link3;
+}
+
+.grid2 a:nth-last-child(4){
+    grid-area: link2;
+}
+
+.grid2 a:nth-last-child(5){
+    grid-area: link1;
+}
+
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
