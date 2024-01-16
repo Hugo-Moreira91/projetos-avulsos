@@ -1,5 +1,5 @@
 body{
-    width: 1440px;
+    width: 100vw;
 }
 
 header{
@@ -168,7 +168,7 @@ header p{
 }
 
 footer{
-    width: 100%;
+    width: 100vw;
 }
 
 .footer-container{
@@ -176,22 +176,34 @@ footer{
     grid-auto-flow: column;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100%;
-    width: 80%;
-    margin: 0 auto;
+    gap: 0;
+    width: 75%;
+    margin: 45px auto;
 }
 
 .grid1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /*
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    */
+}
+
+.grid1 img{
+    width: 15%;
 }
 
 .grid2{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    width: 110%;
     grid-template-areas: "link1 link3 link5"
-                         "link2 link4 link6";
+                         "link2 link4 link6";            
 }
 
 .grid2 a:nth-last-child(1){
@@ -215,6 +227,7 @@ footer{
 }
 
 .grid3{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
