@@ -14,6 +14,9 @@
     /* Neutral colors*/
     --darkGray: hsl(0, 0%, 59%);
 
+    /* Font */
+    --kumbh: 'KumbhSans';
+
     /* Body Copy -> Font-size (name and stats): 18px */
     /* Font Weights: 400 and 700 */
 }
@@ -43,9 +46,8 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--darkCyan);
-    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
-    background-repeat: no-repeat;
     position: relative;
+    /*overflow-y: hidden;*/    /* Retirar do comentário após o término da estilização */
 }
 
 body::before{
@@ -58,4 +60,45 @@ body::before{
     background-image: url('../images/bg-pattern-bottom.svg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    top: -55%;
+    right: 40%;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bg-pattern-top.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 88%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+main > img{
+    height: 33%;
+}
+
+.profile-data{
+    position: relative;
+    top: -53px;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-data > img{
+    border-radius: 100%;
+    border: 5px solid hsl(0, 0%, 100%);
 }
