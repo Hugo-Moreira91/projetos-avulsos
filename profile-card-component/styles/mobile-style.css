@@ -17,7 +17,6 @@
     /* Font */
     --kumbh: 'KumbhSans';
 
-    /* Body Copy -> Font-size (name and stats): 18px */
     /* Font Weights: 400 and 700 */
 }
 
@@ -25,29 +24,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--kumbh);
 }
-/*
+
 html, body{
     width: 100%;
     height: 100vh;
 }
-*/
-html{
-    background-color: white;
-}
 
 body{
-    width: 375px;
-    height: 667px;
-    border: 1px solid red;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--darkCyan);
     position: relative;
-    /*overflow-y: hidden;*/    /* Retirar do comentário após o término da estilização */
+    overflow-y: hidden;
 }
 
 body::before{
@@ -84,6 +76,7 @@ main{
     background-color: hsl(0, 0%, 100%);
     border-radius: 15px;
     z-index: 1;
+    position: absolute;
     overflow: hidden;
 }
 
@@ -101,4 +94,72 @@ main > img{
 .profile-data > img{
     border-radius: 100%;
     border: 5px solid hsl(0, 0%, 100%);
+}
+
+.profile-data > h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0 10px;
+    color: var(--veryDarkDesaturatedBlue);
+}
+
+.profile-data > h2 > span{
+    font-weight: 400;
+    margin-left: 5px;
+    color: var(--darkGrayishBlue);
+}
+
+.profile-data > p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--darkGrayishBlue);
+}
+
+hr{
+    border: 0;
+    border-bottom: 1px solid hsl(0, 0%, 93%);
+    margin: 25px 0;
+}
+
+.container-numbers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    width: 90%;
+    margin: auto;
+}
+
+.box-numbers h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--veryDarkDesaturatedBlue);
+}
+
+.box-numbers p{
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--darkGrayishBlue);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    padding: 5px 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution{ 
+    font-size: 12px; 
+    text-align: center; 
+}
+
+.attribution a{ 
+    text-decoration: none;
+    color: var(--veryDarkDesaturatedBlue); 
+    transition: color .5s;
+}
+
+.attribution a:hover{
+    color: hsl(0, 0%, 100%);
 }
